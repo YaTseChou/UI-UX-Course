@@ -1,5 +1,99 @@
+@import url('reset.css');
 
+body{
+    font-family: Verdana;
+	line-height: 1.6;
+    background-color: #e5e5e5;
+    color: #666;
+}
 
+.wrapper{
+    background-image: url(../img/index_bg.jpg);
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.top{
+    overflow: hidden;
+    padding: 30px;
+}
+
+.top img{
+    float: left;
+}
+
+.top ul{
+    float: right;
+    padding-top: 20px;
+}
+
+.top li{
+    float: left;
+    margin-left: 20px;
+}
+
+.top li a{
+    color: white;
+    text-decoration: none;
+}
+
+.top li a:hover{
+    color: #333;
+}
+
+.main{
+    clear: both;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.main h1{
+    font-size: 124px;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 30px;
+}
+
+.main h2{
+    font-size: 36px;
+    line-height: 1;
+}
+
+.main p{
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.main a{
+    display: block;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    background-color: pink;
+    color: white;
+    text-decoration: none;
+}
+
+.about{
+    background-image: url(../img/about_bg.jpg);
+}
+
+.product{
+    background-image: url(../img/product_bg.jpg);
+}
+
+.prd-sel li a{
+    color: #333;
+}
+
+.prd-sel li a:hover{
+    color: pink;
+}
+
+.contact{
+    background-image: url(../img/contact_bg.jpg);
+}
 
 
 

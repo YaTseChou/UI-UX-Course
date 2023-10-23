@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<title>Input Form</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    
+    <div class="top">
+      <img src="img/top_img.jpg" alt="" />
+    </div>
+
+    <div class="main">
+      <h1>Your Order</h1>
+      <span class="line"></span>
+      <ul>
+        <!-- 姓名 -->
+        <li><p>Name</p>
+          <input type="text" class="name">
+        </li>
+        <!-- 電話 -->
+        <li><p>Phone</p>
+          <input type="text" class="phone">
+        </li>
+        <!-- 地址 -->
+        <li><p>Address</p>
+          <input type="text" class="address">
+        </li>
+        <!-- 姓別 -->
+        <li><p>Gender</p>
+          <input type="radio" class="male" name="gender">
+          <span>Male</span>
+          <input type="radio" class="female" name="gender">
+          <span>Female</span>
+        </li>
+        <!-- 訂閱 -->
+        <li><p>Subscribe</p>
+          <input type="checkbox">
+          <span>Email me!</span>
+        </li>
+        <!-- 建議 -->
+        <li><p>Suggest</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </li>
+        <!-- 送出 -->
+        <li>
+          <input type="submit" class="send">
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="form">
+      
+    <form action="">
+
+      <label for="" class="Name">Name<br>
+        <input type="text" class="name" placeholder="xxx">
+      </label>
+
+      <br>
+
+      <label for="" class="Phone">Phone<br>
+        <input type="text" class="phone" placeholder="09-1234-5678">
+      </label>
+
+      <br>
+
+      <label for="" class="Address">Address<br>
+        <input type="text" class="address">
+      </label>
+
+      <br>
+
+      <label for="male" class="Gender">Gender<br>
+        <input type="radio" name="gender" id="male">Male
+      </label>
+
+      <label for="female">
+        <input type="radio" name="gender" id="female">Female
+      </label>
+
+      <br>
+
+      <label for="subscribe">Subscribe<br>
+        <input type="checkbox" id="subscribe">Email Me!
+      </label>
+
+      <br>
+
+      <label for="">Suggest<br>
+        <textarea name="suggest" id="" cols="30" rows="10"></textarea>
+      </label>
+
+      <input type="submit" class="send-btn" value="send">
+
+    </form>
+
+  </div>
+
+</body>
+</html>

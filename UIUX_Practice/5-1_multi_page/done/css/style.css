@@ -1,0 +1,102 @@
+@import url('reset.css');
+
+body{
+	font-family: Verdana;
+	line-height: 1.6;
+	background-color: #e5e5e5;
+	color: #666;
+}
+
+.wrapper{
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url(../img/index_bg.jpg);
+}
+
+.top{
+	padding: 30px;
+	overflow: hidden;
+}
+
+.top img{
+	float: left;
+}
+
+.top ul{
+	float: right;
+	padding-top: 20px;
+}
+
+.top li{
+	float: left;
+	margin-left: 20px;
+}
+
+.top li a{
+	color: white;
+	text-decoration: none;
+}
+
+.top li a:hover{
+	color: #333;
+}
+
+.main{
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.main h2{
+	font-size: 36px;
+	line-height: 1;
+}
+
+.main h1{
+	font-size: 124px;
+	font-weight: bold;
+	line-height: 1;
+	padding-bottom: 30px;
+}
+
+.main p{
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+
+.main a{
+	display: block;
+	width: 150px;
+	line-height: 50px;
+	background-color: pink;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+/*--------------- About Page ---------------*/
+.about{
+	background-image: url(../img/about_bg.jpg);
+}
+
+/*--------------- Product Page ---------------*/
+.product{
+	background-image: url(../img/product_bg.jpg);
+}
+
+.prd-sel li a{
+	color: #333;
+}
+
+.prd-sel li a:hover{
+	color: pink;
+}
+
+/*--------------- Contact Page ---------------*/
+.contact{
+	background-image: url(../img/contact_bg.jpg);
+}
+
+
+
+

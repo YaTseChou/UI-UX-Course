@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, '微軟正黑體';
+}
+
+/* ---------------- 上方區塊 --------------- */
+.top{
+	background-image: url(main_bg.jpg);
+	height: 500px;
+}
+
+.top-center{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.top-center_text{
+	width: 500px;
+	/*background-color: #ccc;*/
+	margin-top: 100px;
+	float: left;
+}
+
+.top-center_text h1{
+	font-family: Verdana;
+	font-size: 62px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.top-center_text p{
+	font-size: 18px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.top-center_text a{
+	background-color: #FBD02C;
+	color: #333;
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+}
+
+.top-center_text a:hover{
+	background-color: #333;
+	color: white;
+}
+
+.top-center img{
+	width: 450px;
+	float: right;
+	margin-top: 50px;
+}
+
+/* ---------------- 下方區塊 --------------- */
+.main{}
+
+.main ul{
+	list-style: none;
+	/*background-color: red;*/
+	overflow: hidden;
+	width: 1086px;
+	padding: 50px 0;
+
+	margin: 0 auto;
+}
+
+.main li{
+	width: 300px;
+	border: 1px solid #ccc;
+	padding: 10px;
+
+	float: left;
+	margin: 0 20px;
+}
+
+.main img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.main h3{
+	text-align: center;
+	color: #666;
+}
+
+.main p{
+	font-size: 13px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.main a{
+	font-size: 13px;
+	display: block;
+	background-color: #9D6025;
+	width: 100px;
+	height: 30px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+
+
+
+
+

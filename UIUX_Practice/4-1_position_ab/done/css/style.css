@@ -1,0 +1,55 @@
+@import url('reset.css');
+
+body{
+	background-color: #333;
+	padding-top: 50px;
+}
+
+.out{
+	background-image: url(../img/main_bg.jpg);
+	width: 1200px;
+	height: 675px;
+	margin: 0 auto;
+
+	position: relative;
+	overflow: hidden;
+}
+
+.out img{
+	position: absolute;
+}
+
+.out .pic1{
+	left: -30px;
+	top: 230px;
+}
+
+.out .pic2{
+	left: 180px;
+	top: 20px;
+}
+
+.out .pic3{
+	left: 280px;
+	top: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

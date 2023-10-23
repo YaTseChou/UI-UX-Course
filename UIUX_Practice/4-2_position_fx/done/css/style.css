@@ -1,0 +1,84 @@
+@import url('reset.css');
+
+body{
+  font-family: Arial;
+  line-height: 1.6;
+  background-color: #e5e5e5;
+}
+
+/*----- Top -----*/
+.top{
+  background-color: #fff;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.top img{
+  display: block;
+  margin: 0 auto;
+}
+
+/*----- Template -----*/
+.template{
+  background-image: url(../img/template.jpg);
+  width: 1200px;
+  height: 3475px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/*----- Position Block -----*/
+.list{
+  height: 690px;
+  position: relative;
+}
+
+.list li{
+  position: absolute;
+  width: 350px;
+  height: 303px;
+}
+
+.list .item1{
+  background-image: url(../img/item1.png);
+  left: 0;
+  right: 0;
+  top: 100px;
+  margin: auto;
+}
+
+.list .item2{
+  background-image: url(../img/item2.png);
+  left: 150px;
+  top: 270px;
+}
+
+.list .item3{
+  background-image: url(../img/item3.png);
+  right: 150px;
+  top: 270px;
+}
+
+p{
+  text-align: center;
+  padding: 180px 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

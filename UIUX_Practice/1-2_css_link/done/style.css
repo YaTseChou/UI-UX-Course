@@ -1,0 +1,38 @@
+
+body{
+	background-image: url(html_bg.png);
+	font-family: Arial;
+}
+
+div{
+	background-image: url(main.png);
+	width: 800px;
+	height: 450px;
+
+	margin: 0 auto;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+h1{
+	font-size: 42px;
+	color: #BC6618;
+}
+
+p{
+	line-height: 1.6;
+	width: 300px;
+}
+
+a{
+	color: #BC6618;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+

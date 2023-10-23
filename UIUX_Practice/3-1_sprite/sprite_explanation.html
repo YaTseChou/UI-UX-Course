@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Sprite Explanation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      padding: 50px;
+      background-color: #f6f6f6;
+      font-family: Arial, Microsoft JhengHei;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2{
+      text-align: center;
+      font-size: 24px;
+      padding-top: 20px;
+    }
+
+    h2 span{
+      color: red;
+    }
+
+    ul{
+      list-style: none;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 225px;
+      left: 50%;
+      margin-left: 400px;
+      border-radius: 0 5px 5px 0;
+      overflow: hidden;
+    }
+
+    li{
+      width: 200px;
+      line-height: 50px;
+      background-color: #f6f6f6;
+      font-size: 14px;
+      text-indent: 50px;
+      cursor: pointer;
+      background-image: url(icon_sprite.png);
+      background-repeat: no-repeat;
+    }
+
+    li:nth-child(2){ background-position: 0 -50px; }
+    li:nth-child(3){ background-position: 0 -100px; }
+    li:nth-child(4){ background-position: 0 -150px; }
+    li:nth-child(5){ background-position: 0 -200px; }
+
+    li:not(:last-child){
+      border-bottom: 1px solid #ccc;
+    }
+
+    li:hover{
+      background-color: #333;
+      color: white;
+    }
+
+    .out{
+      width: 800px;
+      height: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid #eee;
+      position: relative;
+    }
+
+    .mask{
+      height: 220px;
+      width: 100%;
+      background-color: rgba(255,255,255,.8);
+      position: absolute;
+      z-index: 10;
+    }
+
+    .mask1{
+      left: 0;
+      top: 0;
+    }
+
+    .mask2{
+      left: 0;
+      bottom: 0;
+    }
+
+    .button{
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      text-indent: 50px;
+      background-color: #F2AF00;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      border-radius: 5px;
+      border: 2px solid darkorange;
+      font-size: 22px;
+      box-shadow: inset 1px 1px 0 rgba(255,255,255,.5);
+    }
+
+    img{
+      position: absolute;
+      left: 275px;
+      top: 225px;
+      z-index: 5;
+      transition: .3s;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Sprite 說明</h1>
+  
+  <div class="out">
+    <div class="mask mask1"></div>
+    <img src="icon_sprite.png" alt="">
+    <div class="button">Social Media</div>
+    <div class="mask mask2"></div>
+  </div>
+
+  <h2>background-position: <span>0px 0px</span>;</h2>
+
+  <ul>
+    <li class="btn1">Facebook</li>
+    <li class="btn2">LinkedIn</li>
+    <li class="btn3">Reddit</li>
+    <li class="btn4">Twitter</li>
+    <li class="btn5">Line</li>
+  </ul>
+
+<script>
+  
+  $(function(){
+
+    $('.btn1').click(function(){
+      $('img').css('top',225);
+      $('span').html('0px 0px');
+    });
+    $('.btn2').click(function(){
+      $('img').css('top',175);
+      $('span').html('0px -50px');
+    });
+    $('.btn3').click(function(){
+      $('img').css('top',125);
+      $('span').html('0px -100px');
+    });
+    $('.btn4').click(function(){
+      $('img').css('top',75);
+      $('span').html('0px -150px');
+    });
+    $('.btn5').click(function(){
+      $('img').css('top',25);
+      $('span').html('0px -200px');
+    });
+
+  })
+
+</script>
+</body>
+</html>

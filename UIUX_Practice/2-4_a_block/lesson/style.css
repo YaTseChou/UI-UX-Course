@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, '微軟正黑體';
+}
+
+.banner{
+    background-image: url(./main_bg.jpg);
+    height: 500px;
+}
+
+.banner_content{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner_text{
+    width: 500px;
+    float: left;
+    margin-top: 100px;
+}
+
+.banner_text h1{
+    font-family: Verdana;
+    font-size: 62px;
+    color: white;
+}
+
+.banner_text p{
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner_text a{
+    width: 150px;
+    height: 40px;
+    background-color: yellow;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 15px;
+}
+
+.banner_text a:hover{
+    background-color: rgb(108, 108, 3);
+    color: white;
+}
+
+.banner_content img{
+    width: 450px;
+    float: right;
+    margin-top: 50px;
+}
+
+.content ul{
+    list-style: none;
+    /* border: 1px solid red; */
+    width: 1092px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.content li{
+    border: 2px dashed gray;
+    width: 300px;
+    padding: 10px;
+    float: left;
+    margin: 0 20px;
+    
+}
+
+.content img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content h3{
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content a{
+    width: 120px;
+    height: 40px;
+    display: block;
+    background-color: #9D6025;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+

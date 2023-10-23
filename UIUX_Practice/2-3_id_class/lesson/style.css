@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(html_bg.png);
+    margin-top: 50px;
+    font-family: serif;
+}
+
+#out{
+    background-image: url(main_bg.png);
+    width: 800px;
+    height: 760px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.banner1{
+    background-image: url(banner1.png);
+    width: 700px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.banner1 h2{
+    font-size: 40px;
+    color: purple;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.banner1 p{
+    color: purple;
+    padding-left: 20px;
+}
+
+.banner2{
+    background-image: url(banner2.png);
+    width: 700px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.banner2 h2{
+    font-size: 40px;
+    color: green;
+    padding-right: 20px;
+    padding-top: 50px;
+    text-align: right;
+}
+.banner2 p{
+    color: green;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.banner3{
+    background-image: url(banner3.png);
+    width: 700px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.banner3 h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+.banner3 p{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+

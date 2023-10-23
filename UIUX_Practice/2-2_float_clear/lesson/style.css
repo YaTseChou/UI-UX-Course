@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Verdana;
+	padding-top: 100px;
+	background-image: url(html_bg.jpg);
+}
+
+.out {
+    width: 1000px;
+    border: 5px solid gray;
+    margin: 0 auto ;
+}
+
+ul {
+    list-style: none;
+    background-color: gray;
+
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.main {
+    clear: both;
+
+    background-image: url(main_bg.jpg);
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+}

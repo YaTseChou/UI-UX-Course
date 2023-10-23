@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Margin Explanation</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: Microsoft JhengHei, Arial;
+    }
+    
+    .out{
+      background-color: #999;
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .next{
+      width: 400px;
+      height: 100px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 100px;
+      background-color: orange;
+    }
+
+    p{
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      line-height: 200px;
+      border: 5px solid #333;
+      margin: 0 auto;
+      color: white;
+      font-size: 3em;
+    }
+
+    .in1{
+      background-color: green;
+    }
+
+    .in2{
+      background-color: purple;
+    }
+
+    ul{
+      list-style: none;
+      position: fixed;
+      right: 10px;
+      top: 100px;
+      transition: .5s;
+    }
+
+    li{
+      border: 1px solid #ccc;
+      background-color: #eee;
+      width: 300px;
+      line-height: 50px;
+      text-indent: 25px;
+      cursor: pointer;
+    }
+
+    li:hover{
+      background-color: #999;
+      color: white;
+    }
+
+    .btn5{
+      background-color: #ff8800;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      color: white;
+      margin-bottom: 20px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .ppading{
+      padding: 1px 0;
+    }
+
+    .addpadding{
+      background-color: darkred;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="out">
+    <p class="in1">A</p>
+    <p class="in2">B</p>
+  </div>
+
+  <div class="next">
+    Next Block
+  </div>
+
+  <ul>
+    <div class="btn5">父層加入上下 padding 1px<br>( 解決方法之一 )</div>
+    <li class="btn1">A 區塊加 margin-bottom 30px</li>
+    <li class="btn3">B 區塊加 margin-bottom 30px</li>
+    <li class="btn4">A 區塊加 margin-top 30px</li>
+  </ul>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  
+  $(function(){
+
+    $('li').click(function(){
+      $('li').removeAttr('style');
+      $(this).css({
+        'background-color':'#333',
+        'color':'white',
+      })
+    })
+
+    $('.btn5').click(function(){
+      $(this).toggleClass('addpadding');
+    })
+
+    $('.btn1').click(function(){
+      $('.in1').css('margin-bottom', 30);
+    });
+
+    $('.btn3').click(function(){
+      $('.in2').css('margin-bottom', 30);
+    });
+
+    $('.btn4').click(function(){
+      $('.in1').css('margin-top', 30);
+    });
+
+    $('.btn5').click(function(){
+      $('.out').addClass('ppading');
+    });
+
+  })
+
+</script>
+</body>
+</html>

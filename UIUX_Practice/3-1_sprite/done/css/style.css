@@ -1,0 +1,61 @@
+@import url('reset.css');
+
+body{
+	font-family: Arial, Verdana;
+	line-height: 1.6;
+	background-image: url(../img/html_bg.jpg);
+}
+
+.wrapper{
+	width: 1200px;
+	height: 600px;
+	margin: 50px auto;
+	border: 5px solid white;
+}
+
+.nav{
+	width: 200px;
+	height: 600px;
+	background-color: #fff;
+	float: left;
+}
+
+.nav img{
+	width: 100px;
+	display: block;
+	margin: 50px auto;
+}
+
+.nav ul{}
+
+.nav li{
+	margin: 0 10px;
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.nav a{
+	display: block;
+	line-height: 50px;
+	color: #666;
+	text-decoration: none;
+	font-size: 12px;
+	background-image: url(../img/icon_sprite.png);
+	background-repeat: no-repeat;
+	text-indent: 50px;
+}
+
+.nav a:hover{
+	color: #09A7D5;
+}
+
+.nav .btn1 a{ background-position: 0 0; }
+.nav .btn2 a{ background-position: 0 -50px; }
+.nav .btn3 a{ background-position: 0 -100px; }
+.nav .btn4 a{ background-position: 0 -150px; }
+.nav .btn5 a{ background-position: 0 -200px; }
+
+.content{
+	float: right;
+}
+
+

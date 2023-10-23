@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>float & inline-block</title>
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      padding-top: 100px;
+      font-family: Arial;
+      background-color: #eee;
+    }
+
+    .box{
+      width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      margin: 0 auto 50px auto;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    li{
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    input{
+      width: 20px;
+      height: 20px;
+      margin-right: 7px;
+    }
+
+    .main{
+      border: 1px solid #ccc;
+      background-color: #f6f6f6;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    p{
+      width: 50px;
+      height: 50px;
+      background-color: #666;
+      margin: 10px;
+    }
+
+    .box1 p{
+      float: left;
+    }
+
+    .box2{
+      text-align: center;
+      font-size: 0;
+    }
+
+    .box2 p{
+      display: inline-block;
+    }
+
+    .box3 p{
+      float: right;
+    }
+
+    .box3 p:first-child{
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- Box 1 -->
+  <div class="box box1">
+    
+    <ul>
+      <li><input type="checkbox"><b>float</b></li>
+      <li><input type="checkbox"><b>inline-block</b></li>
+    </ul>
+
+    <div class="main">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+  </div>
+
+  <!-- Box 2 -->
+  <div class="box box2">
+    
+    <ul>
+      <li><input type="checkbox"><b>float</b></li>
+      <li><input type="checkbox"><b>inline-block</b></li>
+    </ul>
+
+    <div class="main">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+  </div>
+
+  <!-- Box 3 -->
+  <div class="box box3">
+    
+    <ul>
+      <li><input type="checkbox"><b>float</b></li>
+      <li><input type="checkbox"><b>inline-block</b></li>
+    </ul>
+
+    <div class="main">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+@import url('reset.css');
+
+body{
+	font-family: Arial, Verdana;
+	line-height: 1.6;
+}
+
+.wrapper{
+	background-color: #f6f6f6;
+	padding: 50px 0;
+	overflow: hidden;
+}
+
+.wrapper h1{
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 50px;
+	background-image: url(../decoration.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+
+	padding-bottom: 20px;
+}
+
+/* Use float */
+/*.wrapper ul{
+	overflow: hidden;
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.wrapper li{
+	width: 370px;
+	background-color: #fff;
+	float: left;
+	margin: 0 10px;
+}*/
+
+/* Use inline-block */
+.wrapper ul{
+	text-align: center;
+	font-size: 0;
+}
+
+.wrapper li{
+	width: 370px;
+	display: inline-block;
+	background-color: #fff;
+	margin: 0 10px;
+}
+
+.wrapper img{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.wrapper h2{
+	font-size: 24px;
+	text-align: center;
+	color: orange;
+}
+
+.wrapper p{
+	font-size: 15px;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

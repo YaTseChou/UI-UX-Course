@@ -1,1 +1,142 @@
 @import url('reset.css');
+
+body{
+    font-family: Verdana;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 20px 0 10px;
+    overflow: hidden;
+}
+
+.header img{
+    float: left;
+    width: 60px;
+    height: 63px;
+}
+
+.header ul{
+    float: right;
+    margin-top: 20px;
+}
+
+.header li{
+    float: left;
+    margin-left: 50px;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url(../img/main_kv.jpg);
+    height: 675px;
+    padding-left: 80px;
+}
+
+.banner h1{
+    font-size: 70px;
+    width: 450px;
+    color: rgb(231, 150, 0);
+    padding-top: 110px;
+}
+
+.banner h2{
+    color: rgb(59, 59, 59);
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.banner a{
+    border: 1px solid rgb(231, 231, 231);
+    display: block;
+    width: 150px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.banner p{
+    width: 450px;
+    color: black;
+    line-height: 1.6;
+}
+
+.content{}
+
+.title h1{
+    font-size: 70px;
+    color: rgb(231, 150, 0);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title p{
+    font-size: 30px;
+    width: 800px;
+    color: gray;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.card{}
+
+.card ul{
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+.card li{
+    width: 339px;
+    display: inline-block;
+    background-color: #7F7770;
+    margin: 0 30px;
+}
+
+.card img{
+}
+
+.card h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+
+}
+
+.card a{
+    font-size: 16px;
+    display: block;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #7F7770;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 50px;
+}

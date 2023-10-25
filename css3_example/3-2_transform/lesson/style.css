@@ -1,0 +1,119 @@
+@import url('reset.css');
+
+body{
+	padding-top: 50px;
+	background-image: url(html_bg.png);
+	color: #333;
+	font-family: '微軟正黑體';
+}
+
+h1{
+	text-align: center;
+	color: #666;
+	font-size: 3em;
+	margin-bottom: 50px;
+	font-family: 'Notable', sans-serif;
+}
+
+ul{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto 30px auto;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: darkgreen;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	width: 240px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	background-image: linear-gradient(0deg, #e5e5e5 0%, #fff 100%);
+	position: relative;
+	transition: all .5s;
+}
+
+li a:hover{
+	z-index: 1;
+	border-color: white;
+	transform: scale(1.2);
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.out{
+	width: 1200px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 50px 20px 0 20px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.out div{
+	width: 500px;
+	padding: 20px;
+	border: 1px solid #e5e5e5;
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-image: url(box_bg.png);
+}
+
+.out h2{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: darkgreen;
+	padding-bottom: 30px;
+}
+
+.out p{
+	display: block;
+	width: 300px;
+	height: 300px;
+	color: white;
+	font-size: 3em;
+	line-height: 300px;
+	text-align: center;
+	margin: 0 auto 20px auto;
+	background-color: #333;
+
+	transition: all 1s;
+}
+
+/* 旋轉 */
+
+
+/* 傾斜 */
+
+
+/* 縮放 */
+
+
+/* 位移 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

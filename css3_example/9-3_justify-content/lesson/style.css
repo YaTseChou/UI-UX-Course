@@ -1,0 +1,32 @@
+@import url("reset.css");
+
+body{
+    background-image: url(html_bg.png);
+    line-height: 1.4;
+    font-family: Verdana;
+    color: #333;
+    padding-top: 30px;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+@import url('reset.css');
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #ffebca;
+	
+	background-image:
+		url(html_bg1.png),
+		url(html_bg2.png),
+		url(html_bg3.png);
+
+	background-repeat:
+		repeat-x,
+		repeat-y,
+		repeat;
+
+	background-position:
+		right bottom,
+		right top,
+		left top;
+
+	background-size:
+		auto 50px,
+		50px auto,
+		auto auto;
+}
+
+img{
+	display: block;
+	margin: 100px auto;
+}
+
+
+
+

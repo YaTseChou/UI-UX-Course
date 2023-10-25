@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>[flex-shrink] Tool Page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="">
+
+	<style>
+		
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			box-sizing: border-box;
+		}
+
+		body{
+			padding-top: 100px;
+			padding-left: 100px;
+			padding-bottom: 50px;
+			font-family: 'Microsoft JhengHei','Heiti TC';
+			background-image: linear-gradient(0deg, transparent 0%, transparent 99%, #ccc 99%, #ccc 100%),
+												linear-gradient(90deg, transparent 0%, transparent 99%, #ccc 99%, #ccc 100%),
+												linear-gradient(0deg, transparent 0%, transparent 90%, #f6f6f6 90%, #e5e5e5 100%),
+												linear-gradient(90deg, transparent 0%, transparent 95%, #f6f6f6 95%, #e5e5e5 100%);
+			background-size: 100px 100px, 100px 100px, 10px 10px, 10px 10px;
+		}
+
+		.result{
+			padding: 20px;
+			background-color: #f6f6f6;
+			position: fixed;
+			right: 10px;
+			top: 50px;
+			min-width: 300px;
+		}
+
+		h2{
+			font-size: 18px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			text-align: center;
+			color: darkred;
+		}
+
+		.result p{
+			margin-bottom: 10px;
+		}
+
+		.original{
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		.original input[type="text"]{
+			border: 1px solid #ccc;
+			padding: 5px;
+			font-size: 15px;
+			border-radius: 3px;
+			display: inline-block;
+			height: 35px;
+			margin-right: 15px;
+			box-shadow: 0px 0px 2px rgba(0,0,0,.3);
+		}
+
+		.or2{
+			padding-bottom: 10px;
+		}
+
+		.or2 input[type="text"]{
+			width: 50px;
+			text-align: center;
+		}
+
+		.send{
+			display: block;
+			width: 500px;
+			border: 0;
+			height: 40px;
+			line-height: 40px;
+			background-color: green;
+			font-size: 15px;
+			color: white;
+			margin: 0 auto;
+			margin-top: 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			letter-spacing: 5px;
+			cursor: pointer;
+		}
+
+		.send:hover{
+			background-color: darkred;
+		}
+
+		.original b{
+			margin-right: 5px;
+		}
+
+		.zip{
+			padding: 20px;
+			background-color: #f6f6f6;
+			position: fixed;
+			right: 10px;
+			top: 340px;
+			min-width: 300px;
+		}
+
+		.zip p{
+			margin-bottom: 10px;
+		}
+
+		.formula{
+			text-align: center;
+			padding: 10px;
+			background-color: #666;
+			color: white;
+			width: 100%;
+			position: fixed;
+			left: 0;
+			top: 0;
+		}
+
+		.tip{
+			font-size: 13px;
+			color: #666;
+			text-align: center;
+			padding: 10px;
+		}
+
+		ul{
+			outline: 1px solid;
+			width: 800px;
+			height: 500px;
+			margin-bottom: 50px;
+			/*margin: 0 auto;*/
+
+			display: flex;
+		}
+
+		li{
+			outline: 1px solid orange;
+
+			flex-grow: 1;
+			flex-basis: 0;
+		}
+
+		li:nth-child(1){
+			background-color: rgba(123,34,89,.2);
+		}
+
+		li:nth-child(2){
+			background-color: rgba(123,134,89,.2);
+		}
+
+		li:nth-child(3){
+			background-color: rgba(123,34,189,.2);
+		}
+
+		li:nth-child(4){
+			background-color: rgba(3,34,89,.2);
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<p class="formula">計算公式：flexBasis * (1 + 目標區塊收縮比 / [全部區塊的 shrink * basis 總合] * 剩餘空間)</p>
+
+	<div class="result">
+		<h2>實際結果</h2>
+		<p>父層寬度：<span class="faw"></span></p>
+		<p>區塊1 寬度：<span class="bk1w"></span></p>
+		<p>區塊2 寬度：<span class="bk2w"></span></p>
+		<p>區塊3 寬度：<span class="bk3w"></span></p>
+		<p>區塊4 寬度：<span class="bk4w"></span></p>
+		<p><span class="bk1w"></span> + <span class="bk2w"></span> + <span class="bk3w"></span> + <span class="bk4w"></span> = <span class="total"></span></p>
+	</div>
+
+	<div class="zip">
+		<h2>公式計算結果</h2>
+		<p>basis 總寬：<span class="bstw"></span></p>
+		<p>剩餘空間：<span class="ttw"></span></p>
+		<p>全部的 shrink * basis 總合：<span class="mainTotal"></span></p>
+		<p>區塊 1：<span class="fin1"></span></p>
+		<p>區塊 2：<span class="fin2"></span></p>
+		<p>區塊 3：<span class="fin3"></span></p>
+		<p>區塊 4：<span class="fin4"></span></p>
+	</div>
+
+
+	<ul>
+		<li class="fm1">AA</li>
+		<li class="fm2">BB</li>
+		<li class="fm3">CC</li>
+		<li class="fm4">DD</li>
+	</ul>
+
+	<div class="original">
+		<b>區塊1 basis</b><input type="text" id="bs1">
+		<b>區塊2 basis</b><input type="text" id="bs2">
+		<b>區塊3 basis</b><input type="text" id="bs3">
+		<b>區塊4 basis</b><input type="text" id="bs4">
+	</div>
+
+	<div class="original or2">
+		<b>區塊1 shrink</b><input type="text" id="sh1" value="1">
+		<b>區塊2 shrink</b><input type="text" id="sh2" value="1">
+		<b>區塊3 shrink</b><input type="text" id="sh3" value="1">
+		<b>區塊4 shrink</b><input type="text" id="sh4" value="1">
+	</div>
+
+	<input type="button" value="送出" class="send">
+
+	<p class="tip">當 shrink 數值相同時，只需把 basis x 總收縮比 即可得出寬度</p>
+
+	
+
+	<script>
+		
+		$(function(){
+
+			//初始結果
+			var FAW = $('ul').width();
+			var BK1W = Math.round($('li:nth-child(1)').width());
+			var BK2W = Math.round($('li:nth-child(2)').width());
+			var BK3W = Math.round($('li:nth-child(3)').width());
+			var BK4W = Math.round($('li:nth-child(4)').width());
+			var TT = BK1W + BK2W + BK3W + BK4W;
+
+			$('.faw').html(FAW);
+			$('.bk1w').html(BK1W);
+			$('.bk2w').html(BK2W);
+			$('.bk3w').html(BK3W);
+			$('.bk4w').html(BK4W);
+			$('.total').html(TT);
+
+			//送出修改
+			$('.send').click(function() {
+
+				var fbs1 = $('#bs1').val();
+				var fbs2 = $('#bs2').val();
+				var fbs3 = $('#bs3').val();
+				var fbs4 = $('#bs4').val();
+
+				var shr1 = $('#sh1').val();
+				var shr2 = $('#sh2').val();
+				var shr3 = $('#sh3').val();
+				var shr4 = $('#sh4').val();
+
+				$('.fm1').css({
+					'flex-shrink':shr1,
+					'flex-basis':fbs1 + 'px',
+				})
+				$('.fm2').css({
+					'flex-shrink':shr2,
+					'flex-basis':fbs2 + 'px',
+				})
+				$('.fm3').css({
+					'flex-shrink':shr3,
+					'flex-basis':fbs3 + 'px',
+				})
+				$('.fm4').css({
+					'flex-shrink':shr4,
+					'flex-basis':fbs4 + 'px',
+				})
+
+				//壓縮結果
+				var FAW = $('ul').width();
+				var BK1W = Math.round($('li:nth-child(1)').width());
+				var BK2W = Math.round($('li:nth-child(2)').width());
+				var BK3W = Math.round($('li:nth-child(3)').width());
+				var BK4W = Math.round($('li:nth-child(4)').width());
+				var TT = BK1W + BK2W + BK3W + BK4W;
+
+				$('.faw').html(FAW);
+				$('.bk1w').html(BK1W);
+				$('.bk2w').html(BK2W);
+				$('.bk3w').html(BK3W);
+				$('.bk4w').html(BK4W);
+				$('.total').html(TT);
+
+				//壓縮比例
+				var baseTotal = parseInt(fbs1) + parseInt(fbs2) + parseInt(fbs3) + parseInt(fbs4);
+				var mainTotal = parseInt(fbs1) * parseInt(shr1) + parseInt(fbs2) * parseInt(shr2) + parseInt(fbs3) * parseInt(shr3) + parseInt(fbs4) * parseInt(shr4);
+				var remaining = FAW - baseTotal;
+
+				$('.bstw').html(baseTotal);
+				$('.ttw').html(remaining);
+				$('.mainTotal').html(mainTotal);
+
+				var fin1 = Math.floor(parseInt(fbs1) * (1 + parseInt(shr1) / mainTotal * remaining)*10)/10;
+				var fin2 = Math.floor(parseInt(fbs2) * (1 + parseInt(shr2) / mainTotal * remaining)*10)/10;
+				var fin3 = Math.floor(parseInt(fbs3) * (1 + parseInt(shr3) / mainTotal * remaining)*10)/10;
+				var fin4 = Math.floor(parseInt(fbs4) * (1 + parseInt(shr4) / mainTotal * remaining)*10)/10;
+
+				$('.fin1').html(fin1);
+				$('.fin2').html(fin2);
+				$('.fin3').html(fin3);
+				$('.fin4').html(fin4);
+
+			});
+
+
+			// flexBasis * (1 + shrinkFactor / sumScaledShrinkFactors * remainingFreeSpace)
+			// flexBasis * (1 + 收縮比 / [全部區塊的 shrink * basis 總合] * 剩餘空間)
+
+			// 100 * (1 + 2 / 1100 * -200)
+			// 300 * (1 + 1 / 1100 * -200)
+
+			//https://stackoverflow.com/questions/36550840/how-to-calculate-flex-shrink-when-flex-items-have-a-different-flex-basis
+
+
+		})
+
+	</script>
+
+	
+	
+</body>
+</html>

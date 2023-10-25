@@ -1,0 +1,118 @@
+@import url("reset.css");
+
+body{
+    background-color: dimgrey;
+    font-family: "微軟正黑體";
+}
+
+.wrapper{
+    width: 1000px;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    background-color: #fff;
+}
+
+header{}
+
+h2{
+    font-size: 2em;
+    line-height: 1;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: .5em;
+    border-left: 10px solid #ccc;
+    margin-top: 20px;
+}
+
+article{
+    padding: 10px;
+    line-height: 1.6;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/*----- 子代選取器 -----*/
+.select1>p{
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    line-height: 2.6;
+    text-align: center;
+}
+
+.select1 div{
+    padding: 20px 20px 0 20px;
+    border: 1px solid #ccc;
+}
+
+
+/*----- 相鄰選取器 -----*/
+.select2{}
+
+.select2 span{
+    display: block;
+    background-color: #e5e5e5;
+    font-size: 13px;
+    margin-bottom: 2px;
+    line-height: 2.5;
+    text-indent: 1em;
+    width: 400px;
+}
+
+.select2 p{
+    margin: 20px 0;
+}
+
+/*----- 兄弟選取器 -----*/
+.select3{}
+
+.select3 span{
+    display: block;
+    background-color: antiquewhite;
+    line-height: 2;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.select3 p{
+    line-height: 2;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+footer{
+    line-height: 5;
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 1020px;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

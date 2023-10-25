@@ -1,0 +1,31 @@
+@import url("reset.css");
+
+body{
+    font-family: Arial, '微軟正黑體';
+    background-color: #f6f6f6;
+    color: #333;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 5em;
+    font-family: 'Squada One', cursive;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 1.5em;
+    font-family: 'Jaldi', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #999;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+

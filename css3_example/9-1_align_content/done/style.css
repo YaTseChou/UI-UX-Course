@@ -1,0 +1,40 @@
+@import url("reset.css");
+
+body{
+    background-image: url(html_bg.jpg);
+    background-position: center top;
+    font-family: Arial;
+    color: white;
+    font-size: 15px;
+}
+
+ul{
+	width: 890px;
+	height: 670px;
+	background-color: rgba(255,255,255,.3);
+	margin: 150px auto 0 auto;
+	box-sizing: border-box;
+	padding: 30px;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+li{
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+img{
+	display: block;
+	margin-bottom: 10px;
+}
+
+p{
+	text-align: center;
+}
+
+
+
+

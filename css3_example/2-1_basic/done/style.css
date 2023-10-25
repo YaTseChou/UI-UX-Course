@@ -1,0 +1,103 @@
+@import url('reset.css');
+
+body{
+  background-image: url(html_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial;
+  color: #333;
+}
+
+.logo{
+  display: block;
+  margin: 50px auto;
+}
+
+.sel{
+  width: 800px;
+  height: 80px;
+  border: 1px solid #ccc;
+  margin: 0 auto 50px;
+
+  /* 漸層 & 圓角 */
+  background-image: linear-gradient(0deg, #fff 0%, #ccc 95%, #fff 100%);
+  border-radius: 10px;
+}
+
+.sel li{
+  float: left;
+  position: relative;
+}
+
+.sel li:not(:last-child):before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: #999;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.sel a{
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 160px;
+  line-height: 80px;
+  text-align: center;
+}
+
+h1{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+
+  /* 文字陰影 */
+  text-shadow: 3px 3px 5px rgba(0,0,0,.5);
+}
+
+.content{
+  width: 800px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  /* 區塊陰影 */
+  box-shadow: 10px 10px 5px rgba(0,0,0,.3);
+}
+
+.content img{
+  width: 100%;
+  margin-bottom: 20px;
+
+  /* 透明度 */
+  opacity: .5;
+}
+
+.content p{
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

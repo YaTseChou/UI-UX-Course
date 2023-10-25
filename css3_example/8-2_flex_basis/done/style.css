@@ -1,0 +1,50 @@
+@import url("reset.css");
+
+body{
+    background-image: url(html_bg.jpg);
+    background-position: center top;
+    background-size: cover;
+    line-height: 1.4;
+    font-family: Arial;
+    font-size: 13px;
+    padding-top: 50px;
+}
+
+ul{
+    max-width: 1000px;
+    background-color: rgba(255,255,255,.5);
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+li{
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    /*flex: 1 0 300px;*/
+
+    display: flex;
+}
+
+a{
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+li img{
+    width: 100%;
+}
+
+p{}
+
+
+

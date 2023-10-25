@@ -1,0 +1,64 @@
+@import url("reset.css");
+
+body{
+    padding-top: 50px;
+    background-color: #e5e5e5;
+}
+
+.wrapper {
+	width: 1000px;
+    padding: 50px 0px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.sel {
+	display: flex;
+    width: 800px;
+    margin: 0 auto;
+    font-family: Verdana;
+    margin-bottom: 10px;
+}
+
+.sel li{
+    margin-right: 3px;
+}
+
+.sel a{
+    display: block;
+    background-color: firebrick;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    width: 131px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sel a:hover{
+    background-color: black;
+}
+
+img{
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

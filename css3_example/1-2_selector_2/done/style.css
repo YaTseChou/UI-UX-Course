@@ -1,0 +1,153 @@
+@import url("reset.css");
+
+body{
+    background-color: dimgrey;
+    font-family: "微軟正黑體";
+}
+
+.wrapper{
+    width: 1000px;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    background-color: #fff;
+}
+
+h2{
+    font-size: 2em;
+    line-height: 1;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: .5em;
+    border-left: 10px solid #ccc;
+    margin-top: 20px;
+}
+
+article{
+    padding: 10px;
+    line-height: 1.6;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/*----- child 選取器 -1 -----*/
+.select1 li{
+    background-color: antiquewhite;
+    text-align: center;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.select1 li:first-child{
+    background-color: firebrick;
+    color: #fff;
+    text-align: left;
+}
+
+.select1 li:last-child{
+    background-color: forestgreen;
+    color: #fff;
+    text-align: right;
+}
+
+.select1 li:nth-child(2){
+    color: #999;
+}
+
+.select1 li:nth-child(5){
+    color: firebrick;
+}
+
+/*----- child 選取器 -2 -----*/
+.select2 table{
+    border: 3px solid #e5e5e5;
+    width: 100%;
+}
+
+.select2 tr{}
+
+.select2 td{
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.select2 tr:first-child{
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.select2 tr:nth-child(even){
+    background-color: beige;
+}
+
+.select2 tr:nth-child(odd){
+    font-weight: bold;
+    color: firebrick;
+}
+
+/*----- child 選取器 -3 -----*/
+.select3 .type1 {
+	background-color: #f6f6f6;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.select3 .type1 p{
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: darkslategrey;
+    color: #fff;
+    float: left;
+}
+
+.select3 .type1 span{
+    float: left;
+    display: block;
+    padding: 0 10px;
+    margin-right: 5px;
+    line-height: 2;
+}
+
+.select3 .type1 p:nth-of-type(4){
+    background-color: firebrick;
+}
+
+.select3 .type1 p:nth-of-type(5){
+    background-color: green;
+}
+
+
+
+
+footer{
+    line-height: 5;
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 1020px;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

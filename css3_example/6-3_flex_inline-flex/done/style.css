@@ -1,0 +1,66 @@
+@import url("reset.css");
+
+
+body{
+    background-color: #e5e5e5;
+    font-family: '微軟正黑體';
+    padding-top: 50px;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ul{
+    display: flex;
+    padding: 30px 20px;
+}
+
+li{
+    outline: 1px solid #ccc;
+    width: 300px;
+    margin: 0 10px;
+}
+
+li img{
+    display: block;
+    width: 100%;
+}
+
+li p{
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.third-item{
+    padding: 10px;
+    display: flex;
+}
+
+.third-item p{
+    width: 150px;
+    height: 280px;
+    font-size: 13px;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+
+.third-item p:nth-child(1){
+    background-image: url(left_bg.jpg);
+}
+
+.third-item p:nth-child(2){
+    background-image: url(right_bg.jpg);
+}
+
+
+
+
+
+
+
+
+
+

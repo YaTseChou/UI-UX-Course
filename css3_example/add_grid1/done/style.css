@@ -1,0 +1,86 @@
+@import url('reset.css');
+
+body{
+	background-color: #e5e5e5;
+	font-family: Verdana;
+	padding-top: 50px;
+	color: white;
+	font-size: 2em;
+}
+
+.wrapper{
+	width: 1200px;
+	height: 500px;
+	background-color: #fff;
+	outline: 1px solid #ccc;
+	margin: 0 auto;
+	padding: 10px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wrapper > *{
+	padding: 20px;
+	background-size: cover;
+}
+
+header{
+	background-image: url(header_bg.png);
+
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*grid-column: 1 / 4;*/
+}
+
+nav{
+	background-image: url(nav_bg.png);
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+aside{
+	background-image: url(aside_bg.png);
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+
+/* Flex vs Grid */
+/* http://musasi.acsite.org/practice/grid_flex.html */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

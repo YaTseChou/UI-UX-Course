@@ -1,0 +1,111 @@
+@import url("reset.css");
+
+body{
+    background-color: dimgrey;
+    font-family: "微軟正黑體";
+}
+
+.wrapper{
+    width: 1000px;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    background-color: #fff;
+}
+
+h2{
+    font-size: 2em;
+    line-height: 1;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: .5em;
+    border-left: 10px solid #ccc;
+    margin-top: 20px;
+}
+
+article{
+    padding: 10px;
+    line-height: 1.6;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/*----- before & after -1 -----*/
+.select1{
+	padding: 10px;
+}
+
+.select1 table{
+	border: 3px solid #e5e5e5;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.select1 tr:nth-child(odd){
+	background-color: #f6f6f6;
+}
+
+.select1 td{
+	padding: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+/*----- before & after -2 -----*/
+.select2{
+	padding: 10px;
+	margin-top: 10px;
+	line-height: 1.6;
+}
+
+
+/*----- before & after -3 -----*/
+.select3{
+	padding: 10px;
+	margin-top: 10px;
+	line-height: 1.6;
+	position: relative;
+}
+
+.select3 p{
+	margin-left: 170px;
+}
+
+
+
+
+
+
+
+
+footer{
+    line-height: 5;
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 1020px;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

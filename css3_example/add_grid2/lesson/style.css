@@ -1,0 +1,53 @@
+@import url('reset.css');
+
+body{
+	font-size: 15px;
+	line-height: 1.6;
+	font-family: sans-serif;
+	color: #333;
+	padding-top: 50px;
+}
+
+.wrapper{
+	width: 1200px;
+	height: 600px;
+	outline: 1px solid #ccc;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.wrapper > *{
+	padding: 20px;
+}
+
+h1,h2,h3{
+	color: white;
+	font-size: 2em;
+	text-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+header{
+	background-image: url(header_bg.png);
+}
+
+nav{
+	background-image: url(nav_bg.jpg);
+}
+
+aside{
+	background-image: url(aside_bg.jpg);
+}
+
+article{
+	background-image: url(article_bg.jpg);
+}
+
+
+
+
+
+
+
+
+
+

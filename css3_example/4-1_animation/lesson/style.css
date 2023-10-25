@@ -1,0 +1,77 @@
+@import url('reset.css');
+
+body{
+	background-color: #f6f6f6;
+	font-family: Arial, '微軟正黑體';
+	padding-top: 50px;
+}
+
+article{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+section{
+	width: 1200px;
+	position: relative;
+	overflow: hidden;
+}
+
+.anim1{
+	background-image: url(anbg01.png);
+	height: 385px;
+}
+
+.anim2{
+	background-image: url(anbg02.png);
+	height: 358px;
+}
+
+.road{
+	width: 2400px;
+	height: 0;
+	border-bottom: 10px dashed white;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+
+.car1{
+	position: absolute;
+	right: -150px;
+	bottom: 20px;
+}
+
+.car2{
+	background-image: url(car2.png);
+	width: 140px;
+	height: 47px;
+	position: absolute;
+	right: -150px;
+	bottom: 40px;
+}
+
+.car2 img{
+	position: absolute;
+}
+
+.car2 img:nth-child(1){
+	right: 10px;
+	bottom: -15px;
+}
+
+.car2 img:nth-child(2){
+	left: 15px;
+	bottom: -15px;
+}
+
+
+
+
+/* 動畫曲線 cubic-bezier */
+/* http://cubic-bezier.com */
+
+
+
+
+

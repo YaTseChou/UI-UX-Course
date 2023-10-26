@@ -99,17 +99,14 @@ li a:hover{
 	/*transform-origin: left top;*/
 }
 
+.rotate:hover p{
+	transform: rotate3d(1, 1, 0, 45deg);
+}
 
+.scale:hover p{
+	transform: scale3d(1.5, 1, 2);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.translate:hover p{
+	transform: translate3d(50px, 50px, 100px);
+}

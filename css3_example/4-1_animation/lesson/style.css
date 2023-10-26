@@ -34,12 +34,42 @@ section{
 	position: absolute;
 	right: 0;
 	bottom: 20px;
+
+	animation: road 10s linear infinite;
+	/* animation-name: road;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite; */
+}
+
+@keyframes road{
+	0%{
+		right: 0;
+	}
+	100%{
+		right: -100%;
+	}
 }
 
 .car1{
 	position: absolute;
 	right: -150px;
 	bottom: 20px;
+
+	animation: car1 10s linear infinite;
+	/* animation-name: car1;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite; */
+}
+
+@keyframes car1{
+	0%{
+		right: -150px;
+	}
+	100%{
+		right: 1350px;
+	}
 }
 
 .car2{
@@ -49,10 +79,33 @@ section{
 	position: absolute;
 	right: -150px;
 	bottom: 40px;
+
+	animation: car2 5s 2 ease-out backwards;
+	/* animation-name: car2;
+	animation-duration: 5s;
+	animation-iteration-count: 2;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards; */
+}
+
+@keyframes car2{
+	0%{
+		right: -150px;
+	}
+	100%{
+		right: 1200px;
+	}
 }
 
 .car2 img{
 	position: absolute;
+	transform: rotate(0deg);
+
+	animation: tire 1s linear infinite;
+	/* animation-name: tire;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite; */
 }
 
 .car2 img:nth-child(1){
@@ -63,6 +116,15 @@ section{
 .car2 img:nth-child(2){
 	left: 15px;
 	bottom: -15px;
+}
+
+@keyframes tire{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
 }
 
 

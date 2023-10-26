@@ -90,30 +90,27 @@ li a:hover{
 	transition: all 1s;
 }
 
-/* 旋轉 */
+.box1 p{
+	transform-origin: left top;
+}
 
+/* 旋轉 */
+.box1:hover p{
+	transform: rotate(45deg);
+}
 
 /* 傾斜 */
-
+.box2:hover p{
+	transform: skew(45deg, 30deg);
+}
 
 /* 縮放 */
-
+.box3:hover p{
+	transform: scale(.5);
+	border-radius: 50%;
+}
 
 /* 位移 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box4:hover p{
+	transform: translate(-200px, -200px);
+}

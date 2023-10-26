@@ -44,6 +44,7 @@ h1:after{
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
+	top: 0;
 }
 
 /*.basic:after{
@@ -86,7 +87,36 @@ h1:after{
 
 /*----------------- block style ------------------*/
 
+.tran1{
+	/*transition-property: background-color;
+	transition-duration: .5s;
+	transition-delay: 1s;
+	transition-timing-function: ease;*/
 
+	transition: background-color .5s 1s ease;
+}
+
+.tran2{
+	transition-property: width;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+
+	/*transition: width .5s ease-out;*/
+}
+
+.tran3{
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+.tran4{
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+.tran5{
+	transition: all .5s;
+}
 
 /*----------------- hover style ------------------*/
 

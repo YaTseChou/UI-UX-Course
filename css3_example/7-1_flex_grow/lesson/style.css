@@ -6,7 +6,33 @@ body{
     padding-top: 50px;
 }
 
+.sel{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(0deg, #e5e5e5 0%, #fff 100%);
+}
 
+.sel li{
+    border-right: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+.sel li a{
+    display: block;
+    line-height: 70px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.sel li a:hover{
+    background-image: linear-gradient(180deg, #e5e5e5 0%, #fff 100%);
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .2);
+}
 
 img{
     display: block;

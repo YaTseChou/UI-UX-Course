@@ -24,8 +24,35 @@ h2{
     margin-bottom: 50px;
 }
 
+ul{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    outline: 5px solid white;
+    display: flex;
+}
 
+li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+}
 
+.item1{
+    background-image: url(item1_bg.jpg);
+    flex-grow: 3;
+}
 
+.item2{
+    background-image: url(item2_bg.jpg);
+    flex-grow: 1;
+}
 
+.item3{
+    background-image: url(item3_bg.jpg);
+    flex-grow: 2;
+}
 
+li:hover{
+    flex-grow: 5;
+}

@@ -56,11 +56,31 @@ span{
   line-height: 30px;
 }
 
+ul{
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
+}
 
+li{
+  width: 300px;
+  height: 330px;
+  box-sizing: border-box;
+  border: 1p solid #ccc;
+  margin-left: 10px;
+  /* flex-shrink: 0; */
+}
+
+li img{
+  display: block;
+  width: 100%;
+}
 
 .man1{}
 
-.man2{}
+.man2{
+  flex-shrink: 0;
+}
 
 .man3{}
 

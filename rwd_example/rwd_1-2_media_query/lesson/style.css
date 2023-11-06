@@ -15,19 +15,22 @@ p{
 }
 
 /*---------- 螢幕小於 1200 時 ----------*/
-
+@media screen and (max-width: 1200px) {
+  body{
+    background-color: green;
+  }
+}
 
 /*---------- 螢幕小於 800 時 ----------*/
-
+@media screen and (max-width: 800px){
+  body{
+    background-color: blue;
+  }
+}
 
 /*---------- 螢幕小於 600 時 ----------*/
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 600px){
+  body{
+    background-color: yellow;
+  }
+}

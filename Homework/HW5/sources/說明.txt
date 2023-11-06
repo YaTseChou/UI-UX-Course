@@ -1,0 +1,15 @@
+
+1. 字型若想相同，字型名稱為 Candara，windows 內建就有的字型
+
+2. 原始碼不可更動
+
+3. 禁止使用 float，改用 flex
+
+4. 當有某個 flex-itme 需要單獨放至另一邊時, 可以使用 margin
+     例如要放到右邊就是 margin-left: auto;
+
+5. 三角形使用 border 即可畫出
+
+6. position + transform 可以做出不固定寬高的水平垂直置中
+
+7. 使用 Google Map 的內嵌功能可以做出真的地圖

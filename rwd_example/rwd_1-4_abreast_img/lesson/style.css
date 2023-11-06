@@ -31,19 +31,28 @@ p{
 }
 
 /*------------------ 414 --------------------*/
-
+@media screen and (max-width: 414px){
+  div{
+    width: 100%;
+  }
+  img{
+    display: block;
+    width: calc(50% - 5px);
+  }
+}
 
 /*------------------ 375 --------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 375px){
+  h1{
+    font-size: 38px;
+  }
+  div{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

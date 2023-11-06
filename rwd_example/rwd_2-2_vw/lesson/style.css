@@ -42,7 +42,36 @@ a{
 
 
 /*----------------- 414 -------------------*/
+@media screen and (max-width: 414px){
+  body{
+    padding: 0;
+  }
 
+  .wrapper{
+    width: auto;
+    height: 100vh;
+    padding: 30px;
+    background-image: url(mobile_bg.png);
+    background-size: cover;
+  }
+
+  h1{
+    font-size: 12vw;
+    text-align: center;
+  }
+
+  p{
+    margin-right: 0;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  a{
+    font-size: 7.5vw;
+    width: auto;
+    padding: 0 20px;
+  }
+}
 
 
 

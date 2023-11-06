@@ -75,23 +75,27 @@ footer h2{
   line-height: 50px;
 }
 
+@media screen and (max-width: 414px){
+  .wrapper{
+    width: 100%;
+  }
 
+  header{
+    background-size: cover;
+  }
 
+  header p{
+    font-size: 13px;
+    text-align: center;
+    margin: 0 50px;
+    line-height: 1.6;
+  }
 
+  .main{
+    flex-direction: column;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  nav p{
+    text-align: center;
+  }
+}

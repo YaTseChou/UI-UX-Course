@@ -1,0 +1,70 @@
+@import url('reset.css');
+
+body{
+  font-family: Heiti TC, Microsoft JhengHei, Arial;
+  padding: 20px;
+}
+
+h1{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+div{
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 auto 10px auto;
+}
+
+.picA{  
+  float: left;
+}
+
+.picB{
+  float: right;
+}
+
+p{
+  line-height: 1.6;
+}
+
+/*------------------ 414 --------------------*/
+@media screen and (max-width: 414px){
+  div{
+    width: 100%;
+  }
+  img{
+    display: block;
+    width: calc(50% - 5px);
+  }
+}
+
+/*------------------ 375 --------------------*/
+@media screen and (max-width: 375px){
+  h1{
+    font-size: 38px;
+  }
+  div{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,18 +7,42 @@ body{
     color: #666;
 }
 
+.wrapper{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #fff;
+}
 
+.item-1{}
 
+.item-1 img{}
 
+.item-2{
+    background-color: #f6f6f6;
+    padding: 50px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.item-2 h1{
+    font-size: 2.3em;
+}
 
+.item-2 h2{
+    color: #ccc;
+    letter-spacing: 10px;
+}
 
+.item-2 p{
+    line-height: 1.6;
+}
 
+.item-2 .btn-1{}
 
+.item-2 .btn-2{}
 
-
-
-
-
-
-
+.item-2 *{
+    margin-bottom: 30px;
+}

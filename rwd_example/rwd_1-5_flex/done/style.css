@@ -1,0 +1,121 @@
+@import url('reset.css');
+
+body{
+  font-family: Heiti TC, Microsoft JhengHei, Arial;
+  font-size: 15px;
+  background-image: url(html_bg.png);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  height: 150px;
+  background-image: url(header_bg.jpg);
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  font-size: 32px;
+  color: lightblue;
+  margin-bottom: 10px;
+}
+
+header p{
+  color: white;
+}
+
+
+.main{
+  display: flex;
+}
+
+.main nav{
+  padding: 20px;
+  background-color: #333;
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+.main nav p{
+  color: white;
+  line-height: 2.5;
+}
+
+.main section{
+  background-color: #fff;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.main section p{
+  line-height: 1.6;
+}
+
+
+footer{
+  height: 50px;
+  border-top: 1px solid #ccc;
+}
+
+footer h2{
+  text-align: center;
+  font-size: 13px;
+  line-height: 50px;
+}
+
+
+@media screen and (max-width: 414px){
+
+  .wrapper{
+    width: 100%;
+  }
+  header{
+    background-size: cover;
+  }
+  header h1{}
+  header p{
+    font-size: 13px;
+    text-align: center;
+    margin: 0 50px;
+    line-height: 1.6;
+  }
+
+  .main{
+    flex-direction: column;
+  }
+  nav p{
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

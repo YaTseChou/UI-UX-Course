@@ -1,0 +1,125 @@
+@import url('reset.css');
+
+body{
+  font-family: Heiti TC, Microsoft JhengHei, Arial;
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.top{
+  display: block;
+  width: 100%;
+}
+
+footer{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #362e2b;
+}
+
+footer h3{
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  line-height: 50px;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #666;
+  border-bottom: 1px solid #ccc;
+  font-family: Athelas;
+}
+
+ul{
+  height: 230px;
+  margin: 0 50px;
+  background-color: #fff;
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-areas: 'pic1 pic2 pic3 pic5 pic6'
+                       'pic1 pic2 pic4 pic5 pic6';
+  grid-gap: 3px;
+}
+
+li{
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p1{
+  background-image: url(p1.jpg);
+  grid-area: pic1;
+}
+
+.p2{
+  background-image: url(p2.jpg);
+  grid-area: pic2;
+}
+
+.p3{
+  background-image: url(p3.jpg);
+  grid-area: pic3;
+}
+
+.p4{
+  background-image: url(p4.jpg);
+  grid-area: pic4;
+}
+
+.p5{
+  background-image: url(p5.jpg);
+  grid-area: pic5;
+}
+
+.p6{
+  background-image: url(p6.jpg);
+  grid-area: pic6;
+}
+
+picture{
+  display: block;
+  margin: 0 50px;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+
+/*-------------------- 768 ---------------------*/
+
+
+/*-------------------- 414 ---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+

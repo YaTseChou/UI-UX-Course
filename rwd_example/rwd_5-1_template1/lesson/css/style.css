@@ -1,0 +1,107 @@
+@import url(reset.css);
+
+body{
+  background-color: #efb21c;
+  font-family: Arial;
+  color: #333;
+}
+
+.wrapper{
+  width: 1100px;
+  height: 600px;
+  background: #fff url(../img/main_image_pc.png) right top no-repeat;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+  padding: 50px 0 0 80px;
+  box-sizing: border-box;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+.wrapper img{
+  margin-bottom: 60px;
+}
+
+.wrapper h1{
+  font-family: Verdana;
+  font-size: 60px;
+  font-weight: bold;
+  color: #293751;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.wrapper h1 span{
+  color: #fecb00;
+}
+
+.wrapper p{
+  margin-bottom: 80px;
+  width: 300px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.wrapper > a{
+  display: block;
+  width: 150px;
+  line-height: 40px;
+  background-color: #fecb00;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.wrapper > a:hover{
+  background-color: #293751;
+}
+
+.wrapper ul{
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+
+.wrapper li{
+  float: left;
+  margin-left: 10px;
+}
+
+.wrapper li a{
+  color: #fecb00;
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 28px;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.wrapper li a:hover{
+  background-color: #293751;
+  color: #fff;
+}
+
+.wrapper li i{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

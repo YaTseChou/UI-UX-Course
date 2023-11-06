@@ -1,0 +1,105 @@
+@import url('reset.css');
+
+html{
+  font-size: 62.5%; /* 預設字級是16px, 16 x 62.5% ＝ 10 , 方便計算*/
+}
+
+body{
+  font-family: Heiti TC, Microsoft JhengHei, Arial;
+  background-image: url(html_bg.png);
+  padding-top: 50px;
+}
+
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+
+h2{
+  font-size: 2.6rem;
+  text-align: center;
+  color: #666;
+  border-bottom: 1px solid #666;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.box{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box img{
+  float: left;
+  margin-right: 20px;
+}
+
+.box h3{
+  font-size: 4rem;
+  color: darkgreen;
+  margin-bottom: 10px;
+}
+
+.box p{
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+/*----------------- 414 -------------------*/
+@media screen and (max-width: 414px){
+
+  html{
+    font-size: 58%;
+  }
+
+  body{
+    padding-top: 20px;
+  }
+
+  .wrapper{
+    width: 100%;
+  }
+
+  .box{
+    border-radius: 0;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .box h3{
+    font-size: 2.5rem;
+  }
+
+  .box img{
+    width: 30%;
+  }
+
+}
+
+/*----------------- 375 -------------------*/
+@media screen and (max-width: 375px){
+  html{
+    font-size: 40%;
+  }
+  .box p{
+    font-size: 2.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+

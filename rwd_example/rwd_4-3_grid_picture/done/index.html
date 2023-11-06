@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Image</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <img src="header.jpg" alt="" class="top">
+  
+    <h1>About Us</h1>
+
+    <ul>
+      <li class="p1"></li>
+      <li class="p2"></li>
+      <li class="p3"></li>
+      <li class="p4"></li>
+      <li class="p5"></li>
+      <li class="p6"></li>
+    </ul>
+    
+    <!-- img 必需放最後, media 尺寸必需由小到大 -->
+    <!-- 媒體查詢由上往下, 當符合條件後後面的便會被跳過忽略 -->
+    <picture>
+      <source srcset="ab_small.png" media="(max-width: 414px)">
+      <source srcset="ab_middle.png" media="(max-width: 768px)">
+      <img src="ab_big.png" alt="">
+    </picture>
+
+  </div>
+
+  <footer>
+    <h3>2019 All right reserved.</h3>
+  </footer>
+
+</body>
+</html>

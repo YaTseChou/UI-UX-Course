@@ -1,0 +1,83 @@
+
+@media screen and (max-width: 1100px) {
+
+  .wrapper{
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .wrapper{
+    height: 100vh;
+    background-image: url(../img/main_image_mobile.jpg);
+    background-size: contain;
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+
+  .wrapper h1{
+    font-size: 42px;
+  }
+
+  .wrapper > a{
+    margin: 0 auto;
+  }
+
+  .wrapper ul{
+    width: 144px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .wrapper{
+    background-position: 0 60px;
+    padding: 0;
+  }
+
+  .wrapper img{
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .wrapper h1{
+    margin-left: 50px;
+  }
+
+  .wrapper p{
+    margin-left: 50px;
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+
+  .wrapper h1{
+    font-size: 32px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+  }
+
+  .wrapper p{
+    margin-left: 0;
+    width: auto;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+}
+
+
+
+
+
+
+
+

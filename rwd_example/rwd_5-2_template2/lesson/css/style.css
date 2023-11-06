@@ -1,0 +1,210 @@
+@import url('reset.css');
+
+body{
+  background-image: url(../img/html_bg.png);
+  font-family: Candara, Arial;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+.out{
+  width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* ------------- Header -------------- */
+header{
+  background-image: url(../img/main_bg.png);
+  height: 670px;
+}
+
+.top{
+  flex-basis: 100%;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.top img{}
+
+.top i{
+  display: none;
+}
+
+.top ul{
+  display: flex;
+}
+
+.top li{
+  margin-left: 50px;
+}
+
+.top li a{
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  line-height: 100px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.top li a:hover{
+  color: #10c9c3;
+}
+
+.title{
+  width: 475px;
+  margin-right: 100px;
+  margin-top: 100px;
+  float: right;
+}
+
+.title h1{
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.title p{
+  font-size: 18px;
+  color: #787878;
+  margin-bottom: 30px;
+}
+
+.title a{
+  display: block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: #10c9c3;
+  text-decoration: none;
+}
+
+/* ------------- About Us -------------- */
+.about{
+  padding: 100px 0;
+}
+
+.about h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about p{
+  color: #787878;
+  text-align: center;
+  width: 625px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.about img{
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------- Skills -------------- */
+.skill{
+  display: flex;
+  background-color: #f7f6f6;
+}
+
+.skill > img{
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.skill-content{
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 160px 95px;
+}
+
+.skill-content h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.skill-content ul{}
+
+.skill-content li{
+  margin-bottom: 36px;
+}
+
+.skill-content h6{
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skill-content p{
+  height: 3px;
+  background-color: #d8d8d8;
+}
+
+.skill-content span{
+  display: block;
+  height: 3px;
+  background-color: #10c9c3;
+}
+
+/* ------------- List -------------- */
+.list{
+  background-color: #10c9c3;
+}
+
+.list ul{
+  height: 240px;
+  display: flex;
+}
+
+.list li{
+  color: white;
+  padding-top: 100px;
+  padding-left: 50px;
+  flex-grow: 1;
+  /*border-right: 1px solid;*/
+}
+
+.list i{
+  font-size: 42px;
+  float: left;
+  margin-right: 25px;
+}
+
+.list b{
+  font-size: 18px;
+}
+
+.list p{
+  font-size: 13px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

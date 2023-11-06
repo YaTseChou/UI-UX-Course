@@ -1,0 +1,75 @@
+@import url('reset.css');
+
+body{
+  font-family: Heiti TC, Microsoft JhengHei, Arial;
+  background-color: #21243d;
+  padding-top: 50px;
+  line-height: 1.6;
+}
+
+.wrapper{
+  background-image: url(pc_bg.png);
+  width: 1200px;
+  height: 663px;
+  margin: 0 auto;
+  color: white;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 76px;
+  font-weight: bold;
+}
+
+p{
+  font-size: 24px;
+  margin-right: 500px;
+  margin-bottom: 50px;
+}
+
+a{
+  display: block;
+  width: 300px;
+  line-height: 70px;
+  background-color: #21243d;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  border-radius: 50px;
+}
+
+
+/*----------------- 414 -------------------*/
+
+
+
+
+/*----------------- 375 -------------------*/
+@media screen and (max-width: 375px){
+  /* 因為手機尺寸之間寬度差異不大，所以再往下便無需再調整文字大小 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

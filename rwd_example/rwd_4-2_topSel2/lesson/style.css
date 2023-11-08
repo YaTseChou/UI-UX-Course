@@ -83,23 +83,64 @@ body{
 
 
 /*-------------------- 414 ---------------------*/
+@media screen and (max-width: 414px){
+  .topMain{
+    width: auto;
+    height: 60px;
+    position: relative;
+  }
 
+  .topMain img{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
 
+  .topMain .fa{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
 
+  .topMain ul{
+    float: none;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: #7e6b5a;
+    right: -300px;
+    top: 60px;
+    transition: all .5s;
+  }
 
+  .topMain li{
+    float: none;
+  }
 
+  .topMain a{
+    color: white;
+  }
 
+  .topMain .fa:hover ~ ul{
+    right: 0;
+  }
 
+  .kvMain{
+    width: auto;
+    height: 300px;
+  }
 
+  .kvMain h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  .kvMain h2{
+    font-size: 1em;
+  }
+}

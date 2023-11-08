@@ -55,7 +55,39 @@ h2{
 }
 
 /*----------------- 414 -------------------*/
+@media screen and (max-width: 414px){
+  h2{
+    padding: 0 30px;
+  }
 
+  .main{
+    width: 100%;
+  }
+
+  .main li{
+    width: calc(100% - 40px);
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto 20px auto;
+    float: none;
+  }
+
+  .main img{
+    float: left;
+    width: 100px;
+  }
+
+  .main h3{
+    font-size: 28px;
+    text-align: left;
+    margin-left: 110px;
+  }
+
+  .main p{
+    font-size: 13px;
+    margin-left: 110px;
+  }
+}
 
 
 

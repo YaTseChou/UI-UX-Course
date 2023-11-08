@@ -107,19 +107,22 @@ img{
 
 
 /*-------------------- 768 ---------------------*/
-
+@media screen and (max-width: 768px){
+  ul{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'pic3 pic1 pic2 pic5'
+                         'pic4 pic1 pic2 pic6';
+  }
+}
 
 /*-------------------- 414 ---------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 414px){
+  ul{
+    height: 500px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'pic1 pic1'
+                         'pic2 pic5'
+                         'pic2 pic4';
+  }
+}

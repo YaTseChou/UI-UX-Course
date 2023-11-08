@@ -81,24 +81,46 @@ h4{
   font-weight: bold;
 }
 
+@media screen and (max-width: 414px){
+  h1{
+    font-size: 3em;
+  }
 
+  .wrapper{
+    width: auto;
+    margin: 0 10px;
+  }
 
+  .movie{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
 
+  iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
+  .picture{
+    width: auto;
+    height: auto;
+    padding-bottom: 100%;
+    background-size: cover;
+    position: relative;
+  }
 
+  .picture h3{
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

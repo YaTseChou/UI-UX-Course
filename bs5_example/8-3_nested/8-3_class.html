@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,71 @@
   <link rel="stylesheet" href="../css/style.css">
   <title>Bootstrap 5 - Nested</title>
 </head>
+
 <body>
-  
-  
 
+  <div class="container">
 
+    <div class="row">
+      <!-- 左側欄位 -->
 
+      <div class="col-4">
+        <div class="box">left contain</div>
+        <div class="box">left contain</div>
+        <div class="box">left contain</div>
+        <div class="box">left contain</div>
+        <div class="box">left contain</div>
+      </div>
 
-<script src="../js/bootstrap.bundle.min.js"></script>
+      <!-- 右側欄位 -->
+      <div class="col-8 d-flex flex-column">
+
+        <div class="row flex-fill">
+          <div class="col-6 box">right contain</div>
+          <div class="col-6 box">right contain</div>
+        </div>
+
+        <div class="row flex-fill">
+
+          <div class="col-4 box">right contain</div>
+          <div class="col-4 box">right contain</div>
+          <div class="col-4 box">
+
+            <div class="row">
+              <div class="col box">contain</div>
+              <div class="col box">contain</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <br><br>
+
+    <div class="row row-cols-2">
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+    </div>
+
+    <br><br>
+
+    <div class="row row-cols-3">
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+      <div class="col box">contain</div>
+    </div>
+
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

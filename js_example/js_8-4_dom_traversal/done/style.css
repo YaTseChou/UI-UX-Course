@@ -1,0 +1,76 @@
+@import url('reset.css');
+
+body{
+	background-color: #e5e5e5;
+	line-height: 1.6;
+	font-family: Verdana, Microsoft JhengHei;
+	padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.block1{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block1 div{
+  padding: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.block2{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block2 li{
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.block3{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block4{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block4 li{
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.block5{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block5 p{
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.block6{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block6 li{
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+

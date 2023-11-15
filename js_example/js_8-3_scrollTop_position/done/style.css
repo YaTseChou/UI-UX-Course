@@ -1,0 +1,164 @@
+@import url('reset.css');
+
+body{
+	background-color: #e5e5e5;
+	line-height: 1.6;
+	font-family: Verdana;
+}
+
+.top{
+	height: 50px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+.top ul{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.top li{
+	position: relative;
+}
+
+.top li:after{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.top li a{
+	display: block;
+	line-height: 50px;
+	padding: 0 50px;
+	color: #333;
+	text-decoration: none;
+}
+
+.top li .fa{
+	margin-right: 10px;
+}
+
+.top li a:hover{
+	background-color: #333;
+	color: white;
+}
+
+.wrapper{
+	width: 1200px;
+	padding: 10px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.kv{
+	height: 500px;
+	background-image: url(kv_bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-shadow: 0 0 3px #000;
+}
+
+.kv h1{
+	font-size: 3em;
+}
+
+.kv p{
+	font-size: 1.5em;
+}
+
+.wrapper > div{
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center center;
+	border-bottom: 10px solid #fff;
+}
+
+.wrapper > div h3{
+	color: white;
+	font-size: 3em;
+	text-shadow: 0 0 3px #000;
+}
+
+.wrapper > div p{
+	color: white;
+	padding: 30px;
+	font-size: 1.2em;
+	text-align: center;
+	width: 600px;
+	background-color: rgba(0,0,0,.5);
+}
+
+.about{
+	background-image: url(about_bg.jpg);
+}
+
+.prd{
+	background-image: url(prd_bg.jpg);
+}
+
+.con{
+	background-image: url(con_bg.jpg);
+}
+
+footer{
+	background-color: #333;
+}
+
+footer h2{
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+.toTop{
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: darkred;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+	transition: .3s;
+}
+
+.toTop .fa{
+	transition: .3s;
+}
+
+.toTop:hover{
+	background-color: #333;
+}
+
+.toTop:hover .fa{
+	transform: translateY(-5px);
+}
+
+

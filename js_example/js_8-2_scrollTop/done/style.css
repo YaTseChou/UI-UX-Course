@@ -1,0 +1,60 @@
+@import url('reset.css');
+
+body{
+	background-color: #e5e5e5;
+	line-height: 1.6;
+	font-family: Verdana;
+	padding-top: 50px;
+}
+
+h1{
+	font-size: 3em;
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+div{
+	width: 810px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+}
+
+img{
+	display: block;
+	border: 5px solid white;
+	outline: 1px solid #ccc;
+	margin: 20px 0;
+}
+
+.pic1{
+	opacity: 0;
+}
+
+.pic2{
+	position: relative;
+	right: -500px;
+	opacity: 0;
+}
+
+p{
+	line-height: 1.6;
+	font-size: 15px;
+	color: #333;
+}
+
+a{
+	display: block;
+	padding: 10px 0;
+	background-color: green;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+a:hover{
+	background-color: darkred;
+}

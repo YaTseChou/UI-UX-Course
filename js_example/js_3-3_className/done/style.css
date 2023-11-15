@@ -1,0 +1,92 @@
+@import url('reset.css');
+
+body{
+	background-color: #f6f6f6;
+	padding-top: 50px;
+  font-family: Microsoft JhengHei, Heiti TC, Arial;
+}
+
+.wrapper{
+  width: 800px;
+  height: 480px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #666;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,.3);
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+li{
+  line-height: 50px;
+  padding: 0 30px;
+  margin-left: 5px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#fzS{
+  background-color: darkgreen;
+}
+
+#fzM{
+  background-color: darkred;
+}
+
+#fzL{
+  background-color: darkblue;
+}
+
+li:hover{
+  background-color: #333 !important;
+}
+
+p{
+  color: #333;
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+.typeA{
+  font-size: 13px;
+  line-height: 2;
+  color: red;
+  background-color: lightblue;
+}
+
+.typeB{
+  font-size: 15px;
+  color: white;
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.typeC{
+  font-size: 18px;
+  color: orange;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tagNow{
+  background-color: #333 !important;
+}
+
+
+
+
+
+
+
+
+
+

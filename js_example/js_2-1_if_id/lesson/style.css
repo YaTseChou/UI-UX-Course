@@ -1,0 +1,50 @@
+@import url('reset.css');
+
+body{
+	background-image: url(html_bg.png);
+	padding-top: 50px;
+	font-family: Verdana;
+}
+
+.picout{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	border: 5px solid white;
+}
+
+img{
+	display: block;
+}
+
+ul{
+	width: 810px;
+	margin: 20px auto 0 auto;
+	display: flex;
+}
+
+li{
+	flex-grow: 1;
+}
+
+li:not(:last-child){
+	margin-right: 10px;
+}
+
+a{
+	display: block;
+	background-color: #fff;
+	line-height: 50px;
+	text-align: center;
+	color: #333;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px rgba(0,0,0,.5);
+	border: 1px solid #fff;
+}
+
+a:hover{
+	background-color: #333;
+	color: white;
+	border: 1px solid #666;
+}

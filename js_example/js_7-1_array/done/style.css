@@ -1,0 +1,44 @@
+
+body{
+	background-color: #e5e5e5;
+	line-height: 1.6;
+	font-family: Verdana;
+	padding-top: 50px;
+}
+
+.mainText{
+	width: 500px;
+	height: 100px;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 0 auto 50px auto;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 100px;
+}
+
+p{
+	width: 540px;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+a{
+	display: inline-block;
+	background-color: purple;
+	line-height: 40px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	padding: 0 30px;
+}
+
+a:hover{
+	background-color: #333;
+}

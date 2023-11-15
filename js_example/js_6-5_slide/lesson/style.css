@@ -1,0 +1,41 @@
+
+body{
+	background-color: #e5e5e5;
+	line-height: 1.6;
+	font-family: Arial;
+	padding-top: 50px;
+}
+
+.out{
+	width: 500px;
+	height: 300px;
+	outline: 1px solid #999;
+	border: 5px solid white;
+	margin: 0 auto;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+p{
+	text-align: center;
+	padding-top: 20px;
+}
+
+a{
+	display: inline-block;
+	width: 150px;
+	line-height: 40px;
+	text-align: center;
+	background-color: green;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+
+a:hover{
+	background-color: #333;
+}

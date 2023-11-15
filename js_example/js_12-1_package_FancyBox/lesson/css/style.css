@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+body{
+  padding-top: 100px;
+  font-family: Candara, Arial, serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+ul{
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  outline: 1px solid #e5e5e5;
+}
+
+li{
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+li:not(:last-child){
+  margin-right: 10px;
+}
+
+a{
+  display: block;
+}
+
+li img{
+  width: 100%;
+  display: block;
+  filter: grayscale(1);
+  /*transition: .3s;*/
+}
+
+a:hover img{
+  filter: grayscale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JQ scrollTop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+	<h1>.has() 是否有...</h1>
+  <section class="block1">
+    <div class="box">這個區塊只有 div</div>
+    <div class="box">
+      <p>這個區塊是 div 裡包著 p</p>
+    </div>
+  </section>
+
+  <h1>.eq() 第N個</h1>
+  <ul class="block2">
+    <li>Text 1</li>
+    <li>Text 2</li>
+    <li>Text 3</li>
+    <li>Text 4</li>
+    <li>Text 5</li>
+  </ul>
+
+  <h1>.parent() 父層</h1>
+  <div class="block3">
+    <p class="block3Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo dicta quo perspiciatis quae nulla id, voluptates vero asperiores enim debitis quas maiores voluptate suscipit. Tenetur numquam eaque, laudantium voluptatem.</p>
+  </div>
+
+  <h1>.prev() 上一個 / .next() 下一個</h1>
+  <ul class="block4">
+    <li>Text 1</li>
+    <li>Text 2</li>
+    <li class="item">Text 3</li>
+    <li>Text 4</li>
+    <li>Text 5</li>
+  </ul>
+
+  <h1>children() 子層</h1>
+  <div class="block5">
+    <p>First P</p>
+    <p class="sec">Second P</p>
+    <p>Third P</p>
+  </div>
+
+  <h1>siblings() 同層級兄弟</h1>
+  <ul class="block6">
+    <li>Text 1</li>
+    <li class="sec">Text 2</li>
+    <li>Text 3</li>
+    <li>Text 4</li>
+    <li>Text 5</li>
+  </ul>
+  
+</body>
+</html>

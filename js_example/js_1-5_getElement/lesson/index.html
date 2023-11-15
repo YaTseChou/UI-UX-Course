@@ -6,7 +6,13 @@
 	<link rel="stylesheet" href="style.css">
 	<script>
 		
-		
+		function changeImg(){
+			document.getElementById('mainPic').src = 'pic02.jpg';
+		}
+
+		function changeText(){
+			document.getElementById('main').innerHTML = '文字換掉了!';
+		}
 
 	</script>
 </head>
@@ -16,8 +22,8 @@
 
 	<p class="info" id="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, odit! Consectetur, voluptatem. Pariatur delectus quas similique fugit facere numquam aut, nobis fugiat, porro cumque rem maiores ab quo, repellat praesentium.</p>
 
-	<a href="#">Change Image</a>
-	<a href="#">Change Text</a>
+	<a href="#" onclick="changeImg()">Change Image</a>
+	<a href="#" onclick="changeText()">Change Text</a>
 
 </body>
 </html>

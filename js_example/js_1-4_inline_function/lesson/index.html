@@ -21,16 +21,22 @@
 
 	<script type="text/javascript">
 		
-		
+		function alertTextA(){
+			alert('onclick 點擊後呼叫');
+		}
+
+		function alertTextB(){
+			alert('直接呼叫');
+		}
 
 	</script>
 
 </head>
 <body>
 	
-	<a href="#">onclick Button</div>
+	<a href="#" onclick="alertTextA()">onclick Button</div>
 
-	<a href="#">href Button</a>
+	<a href="javascript: alertTextB();">href Button</a>
 
 </body>
 </html>

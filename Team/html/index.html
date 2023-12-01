@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>即饗好味</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
@@ -37,6 +39,77 @@
         </div>
 
     </header>
+
+
+    <!-- logo -->
+
+    <div class="logo">
+        <img src="../img/logo.png" alt="">
+    </div>
+
+    <!-- product list -->
+
+    <div class="product">
+
+        <ul class="product_list">
+            <li><a href="#">即時飯麵</a></li>
+            <li><a href="#">即時醃漬</a></li>
+            <li><a href="#">水餃餛飩</a></li>
+            <li><a href="#">包子饅頭</a></li>
+            <li><a href="#">調理醬包</a></li>
+        </ul>
+
+    </div>
+
+    <!-- carousel -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/banner3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/banner2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/banner1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-prev-bg" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-next-bg" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="time_limit_sales">
+            <img src="../img/Sales.png" alt="">
+        </div>
+
+        <div class="member_discount">
+            <img src="../img/member discount.png" alt="">
+        </div>
+    </main>
 
     <!-- footer -->
     <footer class="footer">
@@ -94,6 +167,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

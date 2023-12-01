@@ -1,13 +1,14 @@
-* {
+*{
     box-sizing: border-box;
 }
 
 footer.footer {
     width: 100%;
     background-color: #CFAD84;
-    position: fixed;
+    margin-top: 50px;
+    /* position: fixed;
     bottom: 0;
-    right: 0;
+    right: 0; */
 }
 
 footer.footer div.footer_top {

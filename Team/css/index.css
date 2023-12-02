@@ -53,11 +53,70 @@ div.product ul.product_list > li > a {
 
 main.main{}
 
-main.main div.time_limit_sales{}
+main.main div.time_limit_sales{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    background-image: url(../img/Sales.png);
+    background-repeat: no-repeat;
+    margin: 100px auto;
+    justify-content: space-around;
+}
+
+main.main div.time_limit_sales div.card{
+    width: 320px;
+    height: 504px;
+    display: flex;
+    vertical-align: top;
+    border: 0;
+    margin-top: 77px;
+}
+
+main.main div.time_limit_sales div.card h1{
+    font-size: 24px;
+    color: #613C11;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 24px 0;
+}
+
+main.main div.time_limit_sales div.card div.card_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+main.main div.time_limit_sales div.card div.card_bottom div.product_price {
+    display: inline-block;
+}
+
+main.main div.time_limit_sales div.card h2{
+    font-size: 20px;
+    color: #6b6b6b; 
+}
+
+main.main div.time_limit_sales div.card h3{
+    font-size: 32px;
+    color: #EB5757;
+    padding: 10px 0;
+}
+
+main.main div.time_limit_sales div.card a{
+    display: block;
+    width: 140px;
+    background-color: #CFAD84;
+    text-align: center;
+    line-height: 28px;
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 8px;
+   text-decoration: none;
+}
 
 main.main div.time_limit_sales img{
+    width: 320px;
     display: block;
-    margin: 100px auto;
 }
 
 main.main div.member_discount{}

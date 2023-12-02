@@ -1,12 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-div.logo{
+div.logo {
     /* position: relative; */
 }
 
-div.logo img{
+div.logo img {
     display: block;
     /* position: absolute;
     top: 78px;
@@ -18,26 +18,26 @@ div.logo img{
     margin-bottom: 40px;
 }
 
-div.product{
+div.product {
     text-align: center;
 }
 
-div.product ul.product_list{
+div.product ul.product_list {
     display: inline-block;
     font-size: 0;
 }
 
-div.product ul.product_list > li {
+div.product ul.product_list>li {
     display: inline-block;
     margin-right: 24px;
     margin-bottom: 48px;
 }
 
-div.product ul.product_list > li:last-child{
+div.product ul.product_list>li:last-child {
     margin-right: 0;
 }
 
-div.product ul.product_list > li > a {
+div.product ul.product_list>li>a {
     text-decoration: none;
     display: inline-block;
     color: #613C11;
@@ -51,29 +51,36 @@ div.product ul.product_list > li > a {
     border-bottom: 3px solid #613C11;
 } */
 
-main.main{}
+main.main {}
 
-main.main div.time_limit_sales{
+main.main div.time_limit_sales {
     display: flex;
     width: 1200px;
-    height: 600px;
+    height: 672px;
     background-image: url(../img/Sales.png);
     background-repeat: no-repeat;
     margin: 100px auto;
     justify-content: space-around;
 }
 
-main.main div.time_limit_sales div.card{
+main.main div.time_limit_sales div.card {
     width: 320px;
     height: 504px;
     display: flex;
     vertical-align: top;
     border: 0;
-    margin-top: 77px;
+    margin-top: 100px;
 }
 
-main.main div.time_limit_sales div.card h1{
+main.main div.time_limit_sales div.card img {
+    width: 320px;
+    display: block;
+}
+
+main.main div.time_limit_sales div.card h1 {
     font-size: 24px;
+    line-height: 110%;
+    letter-spacing: 12%;
     color: #613C11;
     font-weight: 700;
     padding: 10px 0;
@@ -90,39 +97,125 @@ main.main div.time_limit_sales div.card div.card_bottom div.product_price {
     display: inline-block;
 }
 
-main.main div.time_limit_sales div.card h2{
+main.main div.time_limit_sales div.card div.card_bottom div.product_price del {
     font-size: 20px;
-    color: #6b6b6b; 
+    color: #6b6b6b;
 }
 
-main.main div.time_limit_sales div.card h3{
+main.main div.time_limit_sales div.card div.card_bottom div.product_price h3 {
     font-size: 32px;
+    font-weight: 700;
     color: #EB5757;
     padding: 10px 0;
 }
 
-main.main div.time_limit_sales div.card a{
+main.main div.time_limit_sales div.card div.card_bottom div.product_button a {
     display: block;
     width: 140px;
     background-color: #CFAD84;
     text-align: center;
     line-height: 28px;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     padding: 10px 0;
     border-radius: 8px;
-   text-decoration: none;
+    text-decoration: none;
 }
 
-main.main div.time_limit_sales img{
+main.main div.time_limit_sales div.card div.card_bottom div.product_button a:hover {
+    background-color: #EAC18E;
+    box-shadow: 0px 4px 4px rgba(158, 117, 49, .16);
+}
+
+main.main div.time_limit_sales div.card div.card_bottom div.product_button a:focus {
+    background-color: #CEA574;
+    box-shadow: 4px 4px 4px rgba(181, 129, 43, .16) inset;
+}
+
+main.main div.top_sale {
+}
+
+main.main div.top_sale div.top_sale_title {
+    text-align: center;
+}
+
+main.main div.top_sale div.top_sale_title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 12%;
+    color: #613C11;
+}
+
+main.main div.top_sale div.top_sale_product {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+main.main div.top_sale div.top_sale_product div.card {
+    width: 320px;
+    border: 0;
+}
+
+main.main div.top_sale div.top_sale_product div.card img {
     width: 320px;
     display: block;
 }
 
-main.main div.member_discount{}
+main.main div.top_sale div.top_sale_product div.card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #613C11;
+    line-height: 110%;
+    letter-spacing: 12%;
+    padding: 10px 0;
+    margin: 24px 0;
+}
 
-main.main div.member_discount img{
+main.main div.top_sale div.top_sale_product div.card div.card_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+main.main div.top_sale div.top_sale_product div.card div.card_bottom div.product_price h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #613C11;
+    padding: 10px 0;
+}
+
+main.main div.top_sale div.top_sale_product div.card div.card_bottom div.product_button a {
     display: block;
-    margin: 100px auto;
+    width: 140px;
+    background-color: #CFAD84;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+main.main div.top_sale div.top_sale_product div.card div.card_bottom div.product_button a:hover {
+    background-color: #EAC18E;
+    box-shadow: 0px 4px 4px rgba(158, 117, 49, .16);
+}
+
+main.main div.top_sale div.top_sale_product div.card div.card_bottom div.product_button a:focus {
+    background-color: #CEA574;
+    box-shadow: 4px 4px 4px rgba(181, 129, 43, .16) inset;
+}
+
+/* main.main div.member_discount{} */
+
+main.main div.member_discount img {
+    display: block;
+    margin: 0px auto;
+    padding: 30px 0;
     border-radius: 12px;
 }

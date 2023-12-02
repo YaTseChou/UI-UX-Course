@@ -72,9 +72,33 @@ main.main div.time_limit_sales div.card {
     margin-top: 100px;
 }
 
-main.main div.time_limit_sales div.card img {
+main.main div.time_limit_sales div.card div.product_img {
+    position: relative;
+
+}
+
+main.main div.time_limit_sales div.card div.product_img img {
     width: 320px;
     display: block;
+}
+
+main.main div.time_limit_sales div.card div.product_img span {
+    position: absolute;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #fff;
+    top: 15px;
+    right: 15px;
 }
 
 main.main div.time_limit_sales div.card h1 {
@@ -132,8 +156,7 @@ main.main div.time_limit_sales div.card div.card_bottom div.product_button a:foc
     box-shadow: 4px 4px 4px rgba(181, 129, 43, .16) inset;
 }
 
-main.main div.top_sale {
-}
+main.main div.top_sale {}
 
 main.main div.top_sale div.top_sale_title {
     text-align: center;
@@ -160,9 +183,32 @@ main.main div.top_sale div.top_sale_product div.card {
     border: 0;
 }
 
-main.main div.top_sale div.top_sale_product div.card img {
+main.main div.top_sale div.top_sale_product div.card div.product_img{
+    position: relative;
+}
+
+main.main div.top_sale div.top_sale_product div.card div.product_img img {
     width: 320px;
     display: block;
+}
+
+main.main div.top_sale div.top_sale_product div.card div.product_img span {
+    position: absolute;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #fff;
+    top: 15px;
+    right: 15px;
 }
 
 main.main div.top_sale div.top_sale_product div.card h1 {

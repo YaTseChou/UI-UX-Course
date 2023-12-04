@@ -474,3 +474,127 @@ main.main div.member_discount div.member_discount_product div.second_row div.car
     background-color: #CEA574;
     box-shadow: 4px 4px 4px rgba(181, 129, 43, .16) inset;
 }
+
+/* FAQ */
+
+main.main div.faq{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 56px;
+    position: relative;
+}
+
+main.main div.faq div.faq_title{
+    text-align: center;
+}
+
+main.main div.faq div.faq_title h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 12%;
+    color: #613C11;
+}
+
+main.main div.faq div.faq_content{
+    width: 1200px;
+    margin: 56px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main.main div.faq div.faq_content div.faq_picture{
+    display: block;
+    width: 500px;
+}
+
+main.main div.faq div.faq_content div.faq_question {
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    justify-content: space-around;
+}
+
+main.main div.faq div.faq_content div.faq_question div.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main.main div.faq div.faq_content div.faq_question div.faq_layout_index{
+    display: flex;
+    align-items: center;
+}
+
+main.main div.faq div.faq_content div.faq_question div.question div.question_tag{
+    margin-right: 24px;
+}
+
+main.main div.faq div.faq_content div.faq_question div.question div.question_tag span.faq_list_style{
+    display: inline-block;
+    border: 8px solid #613C11;
+    transform: rotate(45deg);
+}
+
+main.main div.faq div.faq_content div.faq_question div.question div.question_content{
+    font-size: 20px;
+    color: #613C11;
+    line-height: 28px;
+    position: relative;
+}
+
+main.main div.faq div.faq_content div.faq_question div.question div.question_arrow span.material-symbols-outlined{
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #613C11;
+}
+
+main.main div.faq div.faq_content div.faq_question div.question div.question_content::after{
+    position: absolute;
+    width: 610px;
+    height: 1px;
+    left: -40px;
+    bottom: -28px;
+    content: "";
+    background-color: #613C11;
+}
+
+main.main div.faq div.faq_button{
+    display: block;
+    width: 140px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main.main div.faq div.faq_button a{
+    display: block;
+    width: 140px;
+    background-color: #CFAD84;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+main.main div.faq div.faq_button a:hover{
+    background-color: #EAC18E;
+    box-shadow: 0px 4px 4px rgba(158, 117, 49, .16);
+}
+
+main.main div.faq div.faq_button a:focus{
+    background-color: #CEA574;
+    box-shadow: 4px 4px 4px rgba(181, 129, 43, .16) inset;
+}

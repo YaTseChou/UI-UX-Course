@@ -60,6 +60,11 @@ div.faq_category div.faq_list{
     justify-content: space-between;
 }
 
+div.faq_category div.faq_list div.icon:hover{
+    border: 3px solid #613C11;
+    cursor: pointer;
+}
+
 div.faq_category div.faq_list div.icon{
     width: 180px;
     height: 180px;

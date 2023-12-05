@@ -1,20 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 /* logo */
 
-div.logo {
-    /* position: relative; */
-}
+div.logo {}
 
 div.logo img {
     display: block;
-    /* position: absolute;
-    top: 78px;
-    left: 0;
-    right: 0;
-    margin: auto; */
     margin: 0 auto;
     padding: 26px 0;
     margin-bottom: 40px;

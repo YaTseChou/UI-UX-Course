@@ -5,9 +5,7 @@
 
 /* logo */
 
-div.logo {
-    /* position: relative; */
-}
+/* div.logo {} */
 
 div.logo img {
     display: block;
@@ -21,7 +19,7 @@ div.logo img {
     margin-bottom: 40px;
 }
 
-div.banner{
+div.banner {
     width: 100%;
     height: 600px;
     background-image: url(../img/about\ banner.jpg);
@@ -29,15 +27,15 @@ div.banner{
     background-size: cover;
 }
 
-div.brand_spirit{
+div.brand_spirit {
     padding-bottom: 100px;
 }
 
-div.brand_spirit div.brand_spirit_title{
+div.brand_spirit div.brand_spirit_title {
     margin: 100px auto;
 }
 
-div.brand_spirit div.brand_spirit_title h1{
+div.brand_spirit div.brand_spirit_title h1 {
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 12%;
@@ -46,9 +44,9 @@ div.brand_spirit div.brand_spirit_title h1{
     text-align: center;
 }
 
-div.brand_spirit div.brand_spirit_content {}
+/* div.brand_spirit div.brand_spirit_content {} */
 
-div.brand_spirit div.brand_spirit_content :nth-child(2n + 1){
+div.brand_spirit div.brand_spirit_content :nth-child(2n + 1) {
     flex-direction: row-reverse;
 }
 
@@ -59,18 +57,18 @@ div.brand_spirit div.brand_spirit_content div.card {
     align-items: center;
 }
 
-div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_img img{
+div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_img img {
     display: block;
     width: 600px;
 }
 
-div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word{
+div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word {
     padding: 10px 16px;
     margin-left: 10px;
     border-left: 4px solid #613C11;
 }
 
-div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2{
+div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2 {
     font-size: 24px;
     font-weight: 700;
     line-height: 110%;
@@ -79,18 +77,18 @@ div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2{
     padding-bottom: 10px;
 }
 
-div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p{
+div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 4%;
     color: #613C11;
 }
 
-div.team div.team_title{
+div.team div.team_title {
     margin: 100px auto;
 }
 
-div.team div.team_title h1{
+div.team div.team_title h1 {
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 12%;
@@ -99,11 +97,11 @@ div.team div.team_title h1{
     text-align: center;
 }
 
-div.team{
+div.team {
     padding-bottom: 100px;
 }
 
-div.team div.team_content{
+div.team div.team_content {
     width: 1200px;
     margin: 0 auto;
 }
@@ -114,9 +112,9 @@ div.team div.team_content div.team_member_top {
     margin-bottom: 100px;
 }
 
-div.team div.team_content div.team_member_top div.team_member{}
+/* div.team div.team_content div.team_member_top div.team_member {} */
 
-div.team div.team_content div.team_member_top div.team_member_name h3{
+div.team div.team_content div.team_member_top div.team_member_name h3 {
     font-size: 28px;
     font-weight: 700;
     line-height: 110%;
@@ -131,7 +129,7 @@ div.team div.team_content div.team_member_bottom {
     justify-content: space-evenly;
 }
 
-div.team div.team_content div.team_member_bottom div.team_member_name h3{
+div.team div.team_content div.team_member_bottom div.team_member_name h3 {
     font-size: 28px;
     font-weight: 700;
     line-height: 110%;

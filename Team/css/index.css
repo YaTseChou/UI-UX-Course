@@ -5,7 +5,7 @@
 
 /* logo */
 
-div.logo {}
+/* div.logo {} */
 
 div.logo img {
     display: block;
@@ -51,7 +51,7 @@ div.product ul.product_list>li>a {
 
 /* 主內容 */
 
-main.main {}
+/* main.main {} */
 
 /* 限時特價 */
 
@@ -160,7 +160,7 @@ main.main div.time_limit_sales div.card div.card_bottom div.product_button a:foc
 
 /* 熱銷排行 */
 
-main.main div.top_sale {}
+/* main.main div.top_sale {} */
 
 main.main div.top_sale div.top_sale_title {
     text-align: center;
@@ -300,7 +300,7 @@ main.main div.member_discount img.banner_picture {
     border-radius: 12px;
 }
 
-main.main div.member_discount div.member_discount_product{}
+/* main.main div.member_discount div.member_discount_product{} */
 
 main.main div.member_discount div.member_discount_product div.first_row{
     width: 1200px;

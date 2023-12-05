@@ -75,7 +75,7 @@ div.faq_category div.faq_list div.icon span{
     font-style: normal;
     font-size: 80px;
     /* Preferred icon size */
-    /* display: inline-block; */
+    display: inline-block;
     line-height: 1;
     text-transform: none;
     letter-spacing: normal;

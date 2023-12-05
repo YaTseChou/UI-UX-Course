@@ -5,15 +5,8 @@
 
 /* logo */
 
-/* div.logo {} */
-
 div.logo img {
     display: block;
-    /* position: absolute;
-    top: 78px;
-    left: 0;
-    right: 0;
-    margin: auto; */
     margin: 0 auto;
     padding: 26px 0;
     margin-bottom: 40px;
@@ -25,6 +18,7 @@ div.banner {
     background-image: url(../img/about\ banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 div.brand_spirit {
@@ -63,6 +57,7 @@ div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_img img {
 }
 
 div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word {
+    width: 600px;
     padding: 10px 16px;
     margin-left: 10px;
     border-left: 4px solid #613C11;
@@ -83,6 +78,8 @@ div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p {
     letter-spacing: 4%;
     color: #613C11;
 }
+
+/* 製作團隊 */
 
 div.team div.team_title {
     margin: 100px auto;
@@ -137,4 +134,70 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
     color: #613C11;
     text-align: center;
     padding-top: 32px;
+}
+
+
+/* RWD--1200 */
+
+@media screen and (max-width: 1200px){
+
+    /* 品牌精神 */
+
+    div.brand_spirit {
+        padding-bottom: 50px;
+    }
+
+    div.brand_spirit div.brand_spirit_title h1 {
+        font-size: 28px;
+    }
+
+    div.brand_spirit div.brand_spirit_content :nth-child(2n + 1) {
+        flex-direction: row;
+    }
+
+    div.brand_spirit div.brand_spirit_content div.card {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_img img {
+        width: 100%;
+    }
+
+    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word {
+        padding: 10px 16px;
+        margin: 30px 10px;
+        border-left: 4px solid #613C11;
+    }
+
+    /* 製作團隊 */
+
+    div.team div.team_title h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    div.logo img{
+        display: none;
+    }
+
+    div.brand_spirit div.brand_spirit_title{
+        display: flex;
+        margin: 20px;
+        margin-bottom: 32px;
+        border-left: 8px solid #613C11;
+    }
+
+    div.brand_spirit div.brand_spirit_title h1 {
+        font-size: 24px;
+        padding-left: 8px;
+    }
+
+    div.brand_spirit div.brand_spirit_content div.card{
+        /* width: calc(100% - 40px); */
+    }
 }

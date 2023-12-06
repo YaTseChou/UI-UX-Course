@@ -65,6 +65,10 @@ div.faq_category div.faq_list div.icon:hover{
     cursor: pointer;
 }
 
+.account_button .icon{
+    border: 3px solid #613C11;
+}
+
 div.faq_category div.faq_list div.icon{
     width: 180px;
     height: 180px;

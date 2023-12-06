@@ -100,6 +100,8 @@ div.team {
 
 div.team div.team_content {
     width: 1200px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -157,12 +159,12 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
 
     div.brand_spirit div.brand_spirit_content div.card {
         flex-direction: column;
-        width: 100%;
+        width: auto;
         margin: 0 auto 30px;
     }
 
-    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_img img {
-        width: 100%;
+    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_img {
+        width: auto;
     }
 
     div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word {
@@ -175,6 +177,29 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
 
     div.team div.team_title h1 {
         font-size: 28px;
+    }
+
+    div.team div.team_content{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    div.team{
+        padding-bottom: 0;
+    }
+        
+    div.team div.team_content{
+        width: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: 0 20px;
+    }
+    
+    div.team_member{
+        margin-right: 20px;
     }
 
 }
@@ -198,6 +223,25 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
     }
 
     div.brand_spirit div.brand_spirit_content div.card{
-        /* width: calc(100% - 40px); */
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+
+    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word{
+        width: auto;
+        margin: 16px 0;
+        border: 0;
+    }
+
+    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2 {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 4%;
+    }
+    
+    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p {
+        font-size: 16px;
+    }
+
 }

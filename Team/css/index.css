@@ -56,13 +56,18 @@ div.product ul.product_list>li>a {
 /* 限時特價 */
 
 main.main div.time_limit_sales {
-    display: flex;
+    /* display: flex; */
     width: 1200px;
     height: 672px;
     background-image: url(../img/Sales.png);
     background-repeat: no-repeat;
     margin: 100px auto;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+}
+
+main.main div.time_limit_sales div.card_container{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 main.main div.time_limit_sales div.card {
@@ -591,4 +596,13 @@ main.main div.faq div.faq_button a:hover{
 main.main div.faq div.faq_button a:focus{
     background-color: #CEA574;
     box-shadow: 4px 4px 4px rgba(181, 129, 43, .16) inset;
+}
+
+@media screen and (max-width: 1200px) {
+    main.main div.top_sale div.top_sale_product{
+        /* width: auto;
+        overflow-x: auto;
+        margin-left: 30px;
+        margin-right: 30px; */
+    }
 }

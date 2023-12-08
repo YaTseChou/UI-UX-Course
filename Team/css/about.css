@@ -13,7 +13,7 @@ div.logo img {
 }
 
 div.banner {
-    width: 100%;
+    width: auto;
     height: 600px;
     background-image: url(../img/about\ banner.jpg);
     background-repeat: no-repeat;
@@ -138,19 +138,14 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
     padding-top: 32px;
 }
 
-
-/* RWD--1200 */
-
 @media screen and (max-width: 1200px){
-
-    /* 品牌精神 */
 
     div.brand_spirit {
         padding-bottom: 50px;
     }
 
     div.brand_spirit div.brand_spirit_title h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     div.brand_spirit div.brand_spirit_content :nth-child(2n + 1) {
@@ -173,8 +168,6 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
         border-left: 4px solid #613C11;
     }
 
-    /* 製作團隊 */
-
     div.team div.team_title h1 {
         font-size: 28px;
     }
@@ -193,6 +186,7 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
         
     div.team div.team_content{
         width: auto;
+        height: auto;
         flex-direction: row;
         overflow-x: auto;
         margin: 0 20px;
@@ -202,12 +196,27 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
         margin-right: 20px;
     }
 
+    div.team div.team_content div.team_member_top{
+        margin-bottom: 40px;
+    }
+
+    div.team div.team_content div.team_member_bottom{
+        margin-bottom: 40px;
+    }
+
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 630px){
 
     div.logo img{
         display: none;
+    }
+
+    div.banner {
+        width: auto;
+        height: 300px;
+        background-image: url(../img/600aboutbanner.jpg);
+        margin-bottom: 32px;
     }
 
     div.brand_spirit div.brand_spirit_title{
@@ -218,7 +227,7 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
     }
 
     div.brand_spirit div.brand_spirit_title h1 {
-        font-size: 24px;
+        font-size: 28px;
         padding-left: 8px;
     }
 
@@ -234,14 +243,19 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
         border: 0;
     }
 
-    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2 {
+    /* div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2 {
         font-size: 20px;
+        font-weight: 700;
         line-height: 28px;
         letter-spacing: 4%;
-    }
+    } */
     
-    div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p {
+    /* div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p {
         font-size: 16px;
+    } */
+
+    div.team div.team_title {
+        margin: 0px auto 40px;
     }
 
 }

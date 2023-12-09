@@ -141,12 +141,9 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
 @media screen and (max-width: 1200px){
 
     div.banner {
-        width: auto;
+
         height: 375px;
         background-image: url(../img/1200aboutbanner.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
     }
 
     div.brand_spirit {

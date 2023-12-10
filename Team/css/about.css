@@ -141,7 +141,6 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
 @media screen and (max-width: 1200px){
 
     div.banner {
-
         height: 375px;
         background-image: url(../img/1200aboutbanner.jpg);
     }
@@ -248,17 +247,6 @@ div.team div.team_content div.team_member_bottom div.team_member_name h3 {
         margin: 16px 0;
         border: 0;
     }
-
-    /* div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word h2 {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 4%;
-    } */
-    
-    /* div.brand_spirit div.brand_spirit_content div.card div.brand_spirit_word p {
-        font-size: 16px;
-    } */
 
     div.team div.team_title {
         margin: 0px auto 40px;

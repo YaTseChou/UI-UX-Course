@@ -7,9 +7,9 @@
     <title>Header</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/script.js"></script>
+
 </head>
 
 <body>
@@ -17,9 +17,32 @@
 
         <div class="header_list">
 
-            <a href="#" ><i class="fa fa-bars" ></i></a>
+            <div class="mobileheader">
+                <img src="../img/smalllogo.png" alt="logo">
+                <div class="menu">
+                    <a href="#"><span class="material-symbols-outlined">search</span></a>
+                    <a href="#"><span class="material-symbols-outlined">shopping_bag</span></a>
+                    <a class="menu_list"><span class="material-symbols-outlined">menu</span></a>
+                    <div class="menu_mask">
+                        <ul class="menu_popup">
+                            <span class="material-symbols-outlined close">close</span>
+                            <div>
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="#">商品列表</a></li>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li><a href="faq.html">常見問題</a></li>
+                                <li><a href="">登入</a></li>
+                                <li><a href="">註冊</a></li>
+                            </div>
+                        </ul>
+                    </div>
 
-            <div class="header_nav_list" >
+                </div>
+            </div>
+
+
+
+            <div class="header_nav_list">
 
                 <ul class="header_nav_list_left">
                     <li><a href="index.html">首頁</a></li>
@@ -39,5 +62,8 @@
         </div>
 
     </header>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>

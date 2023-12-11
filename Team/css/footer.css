@@ -20,9 +20,35 @@ footer.footer div.footer_top {
 }
 
 footer.footer div.footer_top div.footer_nav{
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-weight: 700;
     color: #613C11;
+}
+
+footer.footer div.footer_top div.footer_nav div.footer_title{
+    display: flex;
+}
+
+footer.footer div.footer_top div.footer_nav div.footer_title span.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #613C11;
+    display: none;
+}
+
+footer.footer div.footer_top div.footer_nav h2{
+    padding: 10px;
 }
 
 /* footer.footer div.footer_top div.footer_nav ul.footer_nav_about {} */
@@ -82,4 +108,35 @@ footer.footer div.footer_bottom {
     color: #613C11;
     text-align: center;
     padding: 19px 0;
+}
+
+@media screen and (max-width:834px){
+
+    footer.footer{
+        width: auto;
+    }
+
+    footer.footer div.footer_top{
+        flex-direction: column;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer.footer div.footer_top h2{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    footer.footer div.footer_top div.footer_nav{
+        height: 44px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    footer.footer div.footer_top div.footer_nav div.footer_title span.material-symbols-outlined {
+        display: block;
+    }
 }

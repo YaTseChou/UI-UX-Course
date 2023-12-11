@@ -6,9 +6,6 @@ footer.footer {
     width: 100%;
     background-color: #CFAD84;
     margin-top: 100px;
-    /* position: fixed;
-    bottom: 0;
-    right: 0; */
 }
 
 footer.footer div.footer_top {
@@ -131,9 +128,13 @@ footer.footer div.footer_bottom {
     }
 
     footer.footer div.footer_top div.footer_nav{
-        height: 44px;
-        overflow: hidden;
+        height: auto;
         margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    footer.footer div.footer_top div.footer_nav ul{
+        display: none;
     }
 
     footer.footer div.footer_top div.footer_nav div.footer_title span.material-symbols-outlined {

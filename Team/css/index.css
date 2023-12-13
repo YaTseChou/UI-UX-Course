@@ -45,24 +45,49 @@ div.product ul.product_list>li>a {
     padding: 10px;
 }
 
-/* div.product ul.product_list > li > a:hover{
+div.product ul.product_list > li > a:hover{
     border-bottom: 3px solid #613C11;
-} */
-
-/* 主內容 */
-
-/* main.main {} */
+}
 
 /* 限時特價 */
 
 main.main div.time_limit_sales {
-    /* display: flex; */
     width: 1200px;
     height: 672px;
     background-image: url(../img/Sales.png);
     background-repeat: no-repeat;
     margin: 100px auto;
-    /* justify-content: space-around; */
+    position: relative;
+}
+
+main.main div.time_limit_sales div.countdown{
+    background-color: rgba(255, 194, 103, .3);
+    display: flex;
+    width: 252px;
+    height: 72px;
+    position: absolute;
+    left: 208px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+main.main div.time_limit_sales div.countdown p{
+    font-size: 24px;
+    font-weight: 700;
+    width: 30px;
+    height: 44px;
+    line-height: 44px;
+    margin-right: 4px;
+    text-align: center;
+    background-color: #fff;
+    color: #613C11;
+    border-radius: 4px;
+}
+
+main.main div.time_limit_sales div.countdown :nth-child(3n){
+    background-color:transparent;
+    width: auto;
 }
 
 main.main div.time_limit_sales div.card_container {
@@ -77,11 +102,7 @@ main.main div.time_limit_sales div.card {
     vertical-align: top;
     border: 0;
     margin-top: 100px;
-}
-
-main.main div.time_limit_sales div.card div.product_img {
     position: relative;
-
 }
 
 main.main div.time_limit_sales div.card div.product_img img {
@@ -89,7 +110,7 @@ main.main div.time_limit_sales div.card div.product_img img {
     display: block;
 }
 
-main.main div.time_limit_sales div.card div.product_img span {
+main.main div.time_limit_sales div.card span {
     position: absolute;
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
@@ -164,8 +185,6 @@ main.main div.time_limit_sales div.card div.card_bottom div.product_button a:foc
 }
 
 /* 熱銷排行 */
-
-/* main.main div.top_sale {} */
 
 main.main div.top_sale div.top_sale_title {
     text-align: center;
@@ -601,6 +620,27 @@ main.main div.faq div.faq_button a:focus {
 
 @media screen and (max-width: 1200px) {
 
+    main.main div.time_limit_sales {
+        width: 800px;
+        background-image: url(../img/sales800.png);
+    }
+    
+    main.main div.time_limit_sales div.card_container {
+        overflow-x: auto;
+        justify-content: normal;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    main.main div.time_limit_sales div.card {
+        width: 320px;
+        height: auto;
+        margin: 0 20px;
+        margin-top: 100px;
+        padding-bottom: 20px;
+        flex-shrink: 0;
+    }
+
     main.main div.top_sale div.top_sale_title{
         margin-bottom: 32px;
     }
@@ -704,6 +744,11 @@ main.main div.faq div.faq_button a:focus {
 
 @media screen and (max-width: 800px) {
 
+    main.main div.time_limit_sales {
+        width: 630px;
+        background-image: url(../img/sales630.png);
+    }
+
     div.product ul.product_list > li {
         margin-right: 12px;
     }
@@ -738,6 +783,24 @@ main.main div.faq div.faq_button a:focus {
 }
 
 @media screen and (max-width: 630px){
+
+    main.main div.time_limit_sales {
+        width: 400px;
+        background-image: url(../img/sales400.png);
+    }
+
+    main.main div.time_limit_sales div.countdown{
+        width: 182px;
+        height: 56px;
+        position: absolute;
+        left: 151px;
+    }
+    
+    main.main div.time_limit_sales div.countdown p{
+        width: 22px;
+        height: 36px;
+        line-height: 36px;
+    }
 
     main.main div.faq div.faq_content {
         width: auto;
